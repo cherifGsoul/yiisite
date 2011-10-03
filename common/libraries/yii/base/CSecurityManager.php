@@ -34,7 +34,7 @@
  * {@link CApplication::getSecurityManager()}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CSecurityManager.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CSecurityManager.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.base
  * @since 1.0
  */
@@ -146,6 +146,7 @@ class CSecurityManager extends CApplicationComponent
 	/**
 	 * This method has been deprecated since version 1.1.3.
 	 * Please use {@link hashAlgorithm} instead.
+	 * @return string
 	 */
 	public function getValidation()
 	{

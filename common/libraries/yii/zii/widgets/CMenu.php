@@ -36,7 +36,7 @@
  *
  * @author Jonah Turnquist <poppitypop@gmail.com>
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CMenu.php 3034 2011-03-08 18:22:29Z qiang.xue $
+ * @version $Id: CMenu.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package zii.widgets
  * @since 1.1
  */
@@ -220,6 +220,7 @@ class CMenu extends CWidget
 	 * Renders the content of a menu item.
 	 * Note that the container and the sub-menus are not rendered here.
 	 * @param array $item the menu item to be rendered. Please see {@link items} on what data might be in the item.
+	 * @return string
 	 * @since 1.1.6
 	 */
 	protected function renderMenuItem($item)

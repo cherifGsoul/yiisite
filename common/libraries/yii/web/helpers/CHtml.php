@@ -13,7 +13,7 @@
  * CHtml is a static class that provides a collection of helper methods for creating HTML views.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CHtml.php 2985 2011-02-20 16:10:57Z alexander.makarow $
+ * @version $Id: CHtml.php 3306 2011-06-23 15:26:33Z qiang.xue $
  * @package system.web.helpers
  * @since 1.0
  */
@@ -64,6 +64,19 @@ class CHtml
 	public static function encode($text)
 	{
 		return htmlspecialchars($text,ENT_QUOTES,Yii::app()->charset);
+	}
+
+	/**
+	 * Decodes special HTML entities back to the corresponding characters.
+	 * This is the opposite of {@link encode()}.
+	 * @param string $text data to be decoded
+	 * @return string the decoded data
+	 * @see http://www.php.net/manual/en/function.htmlspecialchars-decode.php
+	 * @since 1.1.8
+	 */
+	public static function decode($text)
+	{
+		return htmlspecialchars_decode($text,ENT_QUOTES);
 	}
 
 	/**
@@ -1624,6 +1637,7 @@ EOD;
 	 */
 	public static function error($model,$attribute,$htmlOptions=array())
 	{
+		self::resolveName($model,$attribute); // turn [a][b]attr into attr
 		$error=$model->getError($attribute);
 		if($error!='')
 		{
@@ -1960,7 +1974,7 @@ EOD;
 		if($live)
 			$cs->registerScript('Yii.CHtml.#'.$id,"jQuery('body').undelegate('#$id','$event').delegate('#$id','$event',function(){{$handler}});");
 		else
-			$cs->registerScript('Yii.CHtml.#'.$id,"jQuery('#$id').$event(function(){{$handler}});");
+			$cs->registerScript('Yii.CHtml.#'.$id,"jQuery('#$id').unbind('$event').bind('$event', function(){{$handler}});");
 		unset($htmlOptions['params'],$htmlOptions['submit'],$htmlOptions['ajax'],$htmlOptions['confirm'],$htmlOptions['return'],$htmlOptions['csrf']);
 	}
 
@@ -2011,8 +2025,7 @@ EOD;
 				return $name;
 			}
 		}
-		else
-			return get_class($model).'['.$attribute.']';
+		return get_class($model).'['.$attribute.']';
 	}
 
 	/**

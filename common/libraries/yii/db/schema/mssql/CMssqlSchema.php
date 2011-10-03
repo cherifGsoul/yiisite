@@ -14,7 +14,7 @@
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @author Christophe Boulain <Christophe.Boulain@gmail.com>
- * @version $Id: CMssqlSchema.php 3099 2011-03-19 01:26:47Z qiang.xue $
+ * @version $Id: CMssqlSchema.php 3270 2011-06-14 17:41:34Z qiang.xue $
  * @package system.db.schema.mssql
  * @since 1.0.4
  */
@@ -276,14 +276,19 @@ EOD;
 	 */
 	protected function findColumns($table)
 	{
+		$columnsTable="INFORMATION_SCHEMA.COLUMNS";
 		$where=array();
 		$where[]="TABLE_NAME='".$table->name."'";
 		if (isset($table->catalogName))
+		{
 			$where[]="TABLE_CATALOG='".$table->catalogName."'";
+			$columnsTable = $table->catalogName.'.'.$columnsTable;
+		}
 		if (isset($table->schemaName))
 			$where[]="TABLE_SCHEMA='".$table->schemaName."'";
+
 		$sql="SELECT *, columnproperty(object_id(table_schema+'.'+table_name), column_name, 'IsIdentity') as IsIdentity ".
-			 "FROM INFORMATION_SCHEMA.COLUMNS WHERE ".join(' AND ',$where);
+			 "FROM ".$this->quoteTableName($columnsTable)." WHERE ".join(' AND ',$where);
 		if (($columns=$this->getDbConnection()->createCommand($sql)->queryAll())===array())
 			return false;
 

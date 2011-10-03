@@ -12,7 +12,7 @@
  * CClientScript manages JavaScript and CSS stylesheets for views.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CClientScript.php 3094 2011-03-16 21:03:45Z qiang.xue $
+ * @version $Id: CClientScript.php 3231 2011-05-21 06:50:35Z mdomba $
  * @package system.web
  * @since 1.0
  */
@@ -301,20 +301,9 @@ class CClientScript extends CApplicationComponent
 			return;
 		$cssFiles=array();
 		$jsFiles=array();
-		$am=Yii::app()->getAssetManager();
 		foreach($this->coreScripts as $name=>$package)
 		{
-			if(isset($package['baseUrl']))
-			{
-				$baseUrl=$package['baseUrl'];
-				if($baseUrl==='' || $baseUrl[0]!=='/')
-					$baseUrl=Yii::app()->getRequest()->getBaseUrl.'/'.$baseUrl;
-				$baseUrl=rtrim($baseUrl,'/');
-			}
-			else if(isset($package['basePath']))
-				$baseUrl=$am->publish(Yii::getPathOfAlias($package['basePath']));
-			else
-				$baseUrl=$this->getCoreScriptUrl();
+			$baseUrl=$this->getPackageBaseUrl($name);
 			if(!empty($package['js']))
 			{
 				foreach($package['js'] as $js)
@@ -476,6 +465,34 @@ class CClientScript extends CApplicationComponent
 	}
 
 	/**
+	 * Returns the base URL for a registered package with the specified name.
+	 * If needed, this method may publish the assets of the package and returns the published base URL.
+	 * @param string $name the package name
+	 * @return string the base URL for the named package. False is returned if the package is not registered yet.
+	 * @see registerPackage
+	 * @since 1.1.8
+	 */
+	public function getPackageBaseUrl($name)
+	{
+		if(!isset($this->coreScripts[$name]))
+			return false;
+		$package=$this->coreScripts[$name];
+		if(isset($package['baseUrl']))
+		{
+			$baseUrl=$package['baseUrl'];
+			if($baseUrl==='' || $baseUrl[0]!=='/' && strpos($baseUrl,'://')===false)
+				$baseUrl=Yii::app()->getRequest()->getBaseUrl().'/'.$baseUrl;
+			$baseUrl=rtrim($baseUrl,'/');
+		}
+		else if(isset($package['basePath']))
+			$baseUrl=Yii::app()->getAssetManager()->publish(Yii::getPathOfAlias($package['basePath']));
+		else
+			$baseUrl=$this->getCoreScriptUrl();
+
+		return $this->coreScripts[$name]['baseUrl']=$baseUrl;
+	}
+
+	/**
 	 * Registers a script package that is listed in {@link packages}.
 	 * This method is the same as {@link registerCoreScript}.
 	 * @param string $name the name of the script package.
@@ -600,6 +617,15 @@ class CClientScript extends CApplicationComponent
 
 	/**
 	 * Registers a meta tag that will be inserted in the head section (right before the title element) of the resulting page.
+	 * 
+	 * <b>Note:</b>
+	 * Meta tags with same attributes will be rendered more then once if called with different values.
+	 * 
+	 * <b>Example:</b>
+	 * <pre>
+	 *    $cs->registerMetaTag('example', 'description', null, array('lang' => 'en'));
+	 *    $cs->registerMetaTag('beispiel', 'description', null, array('lang' => 'de'));
+	 * </pre>
 	 * @param string $content content attribute of the meta tag
 	 * @param string $name name attribute of the meta tag. If null, the attribute will not be generated
 	 * @param string $httpEquiv http-equiv attribute of the meta tag. If null, the attribute will not be generated

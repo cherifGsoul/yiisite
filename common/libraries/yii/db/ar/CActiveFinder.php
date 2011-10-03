@@ -15,7 +15,7 @@
  * {@link CActiveRecord}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CActiveFinder.php 3104 2011-03-22 19:59:34Z alexander.makarow $
+ * @version $Id: CActiveFinder.php 3281 2011-06-15 19:05:45Z qiang.xue $
  * @package system.db.ar
  * @since 1.0
  */
@@ -52,8 +52,8 @@ class CActiveFinder extends CComponent
 	}
 
 	/**
-	 * Performs the relational query based on the given DB criteria.
-	 * Do not call this method. This method is used internally.
+	 * Do not call this method. This method is used internally to perform the relational query
+	 * based on the given DB criteria.
 	 * @param CDbCriteria $criteria the DB criteria
 	 * @param boolean $all whether to bring back all records
 	 * @return mixed the query result
@@ -97,6 +97,7 @@ class CActiveFinder extends CComponent
 	 * This method is internally called.
 	 * @param string $sql the SQL statement
 	 * @param array $params parameters to be bound to the SQL statement
+	 * @return CActiveRecord
 	 */
 	public function findBySql($sql,$params=array())
 	{
@@ -118,6 +119,7 @@ class CActiveFinder extends CComponent
 	 * This method is internally called.
 	 * @param string $sql the SQL statement
 	 * @param array $params parameters to be bound to the SQL statement
+	 * @return CActiveRecord[]
 	 */
 	public function findAllBySql($sql,$params=array())
 	{
@@ -141,6 +143,7 @@ class CActiveFinder extends CComponent
 	/**
 	 * This method is internally called.
 	 * @param CDbCriteria $criteria the query criteria
+	 * @return string
 	 */
 	public function count($criteria)
 	{
@@ -256,15 +259,10 @@ class CActiveFinder extends CComponent
 						$scope=$k;
 						$params=$v;
 					}
-					if(method_exists($model,$scope))
-					{
-						$model->resetScope();
-						call_user_func_array(array($model,$scope),(array)$params);
-						$relation->mergeWith($model->getDbCriteria(),true);
-					}
-					else
-						throw new CDbException(Yii::t('yii','Active record class "{class}" does not have a scope named "{scope}".',
-							array('{class}'=>get_class($model), '{scope}'=>$scope)));
+
+					$model->resetScope();
+					call_user_func_array(array($model,$scope),(array)$params);
+					$relation->mergeWith($model->getDbCriteria(),true);
 				}
 			}
 
@@ -315,7 +313,7 @@ class CActiveFinder extends CComponent
  * CJoinElement represents a tree node in the join tree created by {@link CActiveFinder}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CActiveFinder.php 3104 2011-03-22 19:59:34Z alexander.makarow $
+ * @version $Id: CActiveFinder.php 3281 2011-06-15 19:05:45Z qiang.xue $
  * @package system.db.ar
  * @since 1.0
  */
@@ -942,8 +940,15 @@ class CJoinElement
 
 				if($key==='*')
 				{
-					foreach($this->_table->getColumnNames() as $name)
-						$columns[]=$prefix.$schema->quoteColumnName($name).' AS '.$schema->quoteColumnName($this->_columnAliases[$name]);
+					foreach($this->_table->columns as $name=>$column)
+					{
+						$alias=$this->_columnAliases[$name];
+						if(!isset($selected[$alias]))
+						{
+							$columns[]=$prefix.$column->rawName.' AS '.$schema->quoteColumnName($alias);
+							$selected[$alias]=1;
+						}
+					}
 					continue;
 				}
 
@@ -1092,7 +1097,8 @@ class CJoinElement
 				throw new CDbException(Yii::t('yii','The relation "{relation}" in active record class "{class}" is specified with an invalid foreign key "{key}". There is no such column in the table "{table}".',
 					array('{class}'=>get_class($parent->model), '{relation}'=>$this->relation->name, '{key}'=>$fk, '{table}'=>$fke->_table->name)));
 
-			if(isset($fke->_table->foreignKeys[$fk]))
+
+			if(isset($fke->_table->foreignKeys[$fk]) && $schema->compareTableNames($pke->_table->rawName, $fke->_table->foreignKeys[$fk][0]))
 				$pk=$fke->_table->foreignKeys[$fk][1];
 			else  // FK constraints undefined
 			{
@@ -1191,7 +1197,7 @@ class CJoinElement
  * CJoinQuery represents a JOIN SQL statement.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CActiveFinder.php 3104 2011-03-22 19:59:34Z alexander.makarow $
+ * @version $Id: CActiveFinder.php 3281 2011-06-15 19:05:45Z qiang.xue $
  * @package system.db.ar
  * @since 1.0
  */
@@ -1351,7 +1357,7 @@ class CJoinQuery
  * CStatElement represents STAT join element for {@link CActiveFinder}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CActiveFinder.php 3104 2011-03-22 19:59:34Z alexander.makarow $
+ * @version $Id: CActiveFinder.php 3281 2011-06-15 19:05:45Z qiang.xue $
  * @package system.db.ar
  * @since 1.0.4
  */

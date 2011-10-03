@@ -45,7 +45,7 @@
  * you should store them directly in session on the server side if needed.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CWebUser.php 3081 2011-03-14 17:37:37Z qiang.xue $
+ * @version $Id: CWebUser.php 3276 2011-06-15 14:21:12Z alexander.makarow $
  * @package system.web.auth
  * @since 1.0
  */
@@ -143,6 +143,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 * PHP magic method.
 	 * This method is overriden so that persistent states can also be checked for null value.
 	 * @param string $name property name
+	 * @return boolean
 	 * @since 1.0.3
 	 */
 	public function __isset($name)
@@ -676,6 +677,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	 */
 	protected function changeIdentity($id,$name,$states)
 	{
+		Yii::app()->getSession()->regenerateID();
 		$this->setId($id);
 		$this->setName($name);
 		$this->loadIdentityStates($states);

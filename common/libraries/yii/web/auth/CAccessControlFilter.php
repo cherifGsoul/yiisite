@@ -25,6 +25,7 @@
  * array(
  *   'allow',  // or 'deny'
  *   // optional, list of action IDs (case insensitive) that this rule applies to
+ *   // if not specified, rule applies to all actions
  *   'actions'=>array('edit', 'delete'),
  *   // optional, list of controller IDs (case insensitive) that this rule applies to
  *   // This option is available since version 1.0.3.
@@ -49,7 +50,7 @@
  * </pre>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CAccessControlFilter.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CAccessControlFilter.php 3257 2011-06-13 16:10:18Z alexander.makarow $
  * @package system.web.auth
  * @since 1.0
  */
@@ -163,7 +164,7 @@ class CAccessControlFilter extends CFilter
  * CAccessRule represents an access rule that is managed by {@link CAccessControlFilter}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CAccessControlFilter.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CAccessControlFilter.php 3257 2011-06-13 16:10:18Z alexander.makarow $
  * @package system.web.auth
  * @since 1.0
  */
@@ -175,6 +176,7 @@ class CAccessRule extends CComponent
 	public $allow;
 	/**
 	 * @var array list of action IDs that this rule applies to. The comparison is case-insensitive.
+	 * If no actions are specified, rule applies to all actions.
 	 */
 	public $actions;
 	/**
@@ -184,6 +186,7 @@ class CAccessRule extends CComponent
 	public $controllers;
 	/**
 	 * @var array list of user names that this rule applies to. The comparison is case-insensitive.
+	 * If no user names are specified, rule applies to all users.
 	 */
 	public $users;
 	/**

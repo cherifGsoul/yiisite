@@ -83,7 +83,7 @@
  * is attached to.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CComponent.php 3066 2011-03-13 14:22:55Z qiang.xue $
+ * @version $Id: CComponent.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.base
  * @since 1.0
  */
@@ -142,6 +142,7 @@ class CComponent
 	 * </pre>
 	 * @param string $name the property name or the event name
 	 * @param mixed $value the property value or callback
+	 * @return mixed
 	 * @throws CException if the property/event is not defined or the property is read only.
 	 * @see __get
 	 */
@@ -179,6 +180,7 @@ class CComponent
 	 * Do not call this method. This is a PHP magic method that we override
 	 * to allow using isset() to detect if a component property is set or not.
 	 * @param string $name the property name or the event name
+	 * @return boolean
 	 * @since 1.0.1
 	 */
 	public function __isset($name)
@@ -210,6 +212,7 @@ class CComponent
 	 * to allow using unset() to set a component property to be null.
 	 * @param string $name the property name or the event name
 	 * @throws CException if the property is read only.
+	 * @return mixed
 	 * @since 1.0.1
 	 */
 	public function __unset($name)
@@ -263,7 +266,7 @@ class CComponent
 		}
 		if(class_exists('Closure', false) && $this->canGetProperty($name) && $this->$name instanceof Closure)
 			return call_user_func_array($this->$name, $parameters);
-		throw new CException(Yii::t('yii','{class} does not have a method named "{name}".',
+		throw new CException(Yii::t('yii','{class} and its behaviors do not have a method or closure named "{name}".',
 			array('{class}'=>get_class($this), '{name}'=>$name)));
 	}
 
@@ -634,7 +637,7 @@ class CComponent
  * that are not invoked yet will not be invoked anymore.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CComponent.php 3066 2011-03-13 14:22:55Z qiang.xue $
+ * @version $Id: CComponent.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.base
  * @since 1.0
  */
@@ -686,7 +689,7 @@ class CEvent extends CComponent
  * TextAlign::Right.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CComponent.php 3066 2011-03-13 14:22:55Z qiang.xue $
+ * @version $Id: CComponent.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.base
  * @since 1.0
  */

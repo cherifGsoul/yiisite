@@ -20,7 +20,7 @@
  * Usage is described at {@link CBaseController} and {@link CBaseController::widget}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CWidget.php 3097 2011-03-17 20:01:03Z qiang.xue $
+ * @version $Id: CWidget.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.web.widgets
  * @since 1.0
  */
@@ -71,6 +71,8 @@ class CWidget extends CBaseController
 	 *
 	 * Note, when creating URLs referring to the actions listed in this method,
 	 * make sure the action IDs are prefixed with {@link actionPrefix}.
+	 *
+	 * @return array
 	 *
 	 * @see actionPrefix
 	 * @see CController::actions

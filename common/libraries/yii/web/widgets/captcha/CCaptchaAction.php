@@ -29,7 +29,7 @@
  * </ol>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CCaptchaAction.php 3124 2011-03-25 15:48:05Z qiang.xue $
+ * @version $Id: CCaptchaAction.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.web.widgets.captcha
  * @since 1.0
  */
@@ -139,7 +139,7 @@ class CCaptchaAction extends CAction
 
 	/**
 	 * Gets the verification code.
-	 * @param string $regenerate whether the verification code should be regenerated.
+	 * @param boolean $regenerate whether the verification code should be regenerated.
 	 * @return string the verification code.
 	 */
 	public function getVerifyCode($regenerate=false)

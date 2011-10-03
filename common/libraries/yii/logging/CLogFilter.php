@@ -19,7 +19,7 @@
  * issues encountered.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CLogFilter.php 2799 2011-01-01 19:31:13Z qiang.xue $
+ * @version $Id: CLogFilter.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.logging
  * @since 1.0.6
  */
@@ -51,6 +51,7 @@ class CLogFilter extends CComponent
 	 * This is the main method of CLogFilter. It processes the log messages
 	 * by adding context information, etc.
 	 * @param array $logs the log messages
+	 * @return array
 	 */
 	public function filter(&$logs)
 	{
@@ -58,7 +59,7 @@ class CLogFilter extends CComponent
 		{
 			if(($message=$this->getContext())!=='')
 				array_unshift($logs,array($message,CLogger::LEVEL_INFO,'application',YII_BEGIN_TIME));
-			$this->format($logs);			
+			$this->format($logs);
 		}
 		return $logs;
 	}

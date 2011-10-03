@@ -79,7 +79,7 @@
  * </pre>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CDbConnection.php 3123 2011-03-25 12:20:47Z qiang.xue $
+ * @version $Id: CDbConnection.php 3255 2011-06-13 12:39:41Z alexander.makarow $
  * @package system.db
  * @since 1.0
  */
@@ -88,6 +88,10 @@ class CDbConnection extends CApplicationComponent
 	/**
 	 * @var string The Data Source Name, or DSN, contains the information required to connect to the database.
 	 * @see http://www.php.net/manual/en/function.PDO-construct.php
+	 *
+	 * Note that if you're using GBK or BIG5 then it's highly recommended to
+	 * update to PHP 5.3.6+ and to specify charset via DSN like
+	 * 'mysql:dbname=mydatabase;host=127.0.0.1;charset=GBK;'.
 	 */
 	public $connectionString;
 	/**
@@ -164,6 +168,10 @@ class CDbConnection extends CApplicationComponent
 	 * @var string the charset used for database connection. The property is only used
 	 * for MySQL and PostgreSQL databases. Defaults to null, meaning using default charset
 	 * as specified by the database.
+	 *
+	 * Note that if you're using GBK or BIG5 then it's highly recommended to
+	 * update to PHP 5.3.6+ and to specify charset via DSN like
+	 * 'mysql:dbname=mydatabase;host=127.0.0.1;charset=GBK;'.
 	 */
 	public $charset;
 	/**
@@ -171,8 +179,9 @@ class CDbConnection extends CApplicationComponent
 	 * will use the native prepare support if available. For some databases (such as MySQL),
 	 * this may need to be set true so that PDO can emulate the prepare support to bypass
 	 * the buggy native prepare support. Note, this property is only effective for PHP 5.1.3 or above.
+	 * The default value is null, which will not change the ATTR_EMULATE_PREPARES value of PDO.
 	 */
-	public $emulatePrepare=false;
+	public $emulatePrepare;
 	/**
 	 * @var boolean whether to log the values that are bound to a prepare SQL statement.
 	 * Defaults to false. During development, you may consider setting this property to true
@@ -218,6 +227,12 @@ class CDbConnection extends CApplicationComponent
 		'oci'=>'COciSchema',        // Oracle driver
 	);
 
+	/**
+	 * @var string Custom PDO wrapper class.
+	 * @since 1.1.8
+	 */
+	public $pdoClass = 'PDO';
+
 	private $_attributes=array();
 	private $_active=false;
 	private $_pdo;
@@ -244,6 +259,7 @@ class CDbConnection extends CApplicationComponent
 
 	/**
 	 * Close the connection when serializing.
+	 * @return array
 	 */
 	public function __sleep()
 	{
@@ -378,11 +394,11 @@ class CDbConnection extends CApplicationComponent
 	 */
 	protected function createPdoInstance()
 	{
-		$pdoClass='PDO';
+		$pdoClass=$this->pdoClass;
 		if(($pos=strpos($this->connectionString,':'))!==false)
 		{
 			$driver=strtolower(substr($this->connectionString,0,$pos));
-			if($driver==='mssql' || $driver==='dblib')
+			if($driver==='mssql' || $driver==='dblib' || $driver==='sqlsrv')
 				$pdoClass='CMssqlPdoAdapter';
 		}
 		return new $pdoClass($this->connectionString,$this->username,
@@ -398,8 +414,8 @@ class CDbConnection extends CApplicationComponent
 	protected function initConnection($pdo)
 	{
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		if($this->emulatePrepare && constant('PDO::ATTR_EMULATE_PREPARES'))
-			$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,true);
+		if($this->emulatePrepare!==null && constant('PDO::ATTR_EMULATE_PREPARES'))
+			$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES,$this->emulatePrepare);
 		if($this->charset!==null)
 		{
 			$driver=strtolower($pdo->getAttribute(PDO::ATTR_DRIVER_NAME));
@@ -456,6 +472,7 @@ class CDbConnection extends CApplicationComponent
 	 */
 	public function beginTransaction()
 	{
+		Yii::trace('Starting transaction','system.db.CDbConnection');
 		$this->setActive(true);
 		$this->_pdo->beginTransaction();
 		return $this->_transaction=new CDbTransaction($this);

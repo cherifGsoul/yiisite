@@ -51,7 +51,7 @@
  * </pre>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CPagination.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CPagination.php 3249 2011-05-29 11:35:37Z alexander.makarow $
  * @package system.web
  * @since 1.0
  */
@@ -71,7 +71,7 @@ class CPagination extends CComponent
 	 */
 	public $route='';
 	/**
-	 * @var array the additional GET parameters (name=>value) that should be used when generating pagination URLs.
+	 * @var array of parameters (name=>value) that should be used instead of GET when generating pagination URLs.
 	 * Defaults to null, meaning using the currently available GET parameters.
 	 * @since 1.0.9
 	 */
@@ -218,7 +218,7 @@ class CPagination extends CComponent
 	 */
 	public function getOffset()
 	{
-		return $this->currentPage*$this->pageSize;
+		return $this->getCurrentPage()*$this->getPageSize();
 	}
 
 	/**
@@ -229,6 +229,6 @@ class CPagination extends CComponent
 	 */
 	public function getLimit()
 	{
-		return $this->pageSize;
+		return $this->getPageSize();
 	}
 }

@@ -48,7 +48,7 @@ Yii::import('CHtml',true);
  * {@link CApplication::getErrorHandler()}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CErrorHandler.php 3008 2011-02-26 19:54:10Z alexander.makarow $
+ * @version $Id: CErrorHandler.php 3314 2011-06-24 14:47:47Z qiang.xue $
  * @package system.base
  * @since 1.0
  */
@@ -96,7 +96,8 @@ class CErrorHandler extends CApplicationComponent
 
 		if($this->discardOutput)
 		{
-			while(@ob_end_clean()) ;
+			while (ob_get_length())
+				@ob_end_clean();
 		}
 
 		if($event instanceof CExceptionEvent)
@@ -174,10 +175,10 @@ class CErrorHandler extends CApplicationComponent
 
 			if(!headers_sent())
 				header("HTTP/1.0 {$data['code']} ".get_class($exception));
-			if($exception instanceof CHttpException || !YII_DEBUG)
-				$this->render('error',$data);
-			else if($this->isAjaxRequest())
+			if($this->isAjaxRequest())
 				$app->displayException($exception);
+			else if($exception instanceof CHttpException || !YII_DEBUG)
+				$this->render('error',$data);
 			else
 				$this->render('exception',$data);
 		}

@@ -17,7 +17,7 @@
  * {@link tempName}, {@link type}, {@link size} and {@link error}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CUploadedFile.php 2799 2011-01-01 19:31:13Z qiang.xue $
+ * @version $Id: CUploadedFile.php 3313 2011-06-24 14:40:47Z qiang.xue $
  * @package system.web
  * @since 1.0
  */
@@ -147,7 +147,7 @@ class CUploadedFile extends CComponent
 	 * @param integer $size the actual size of the uploaded file in bytes
 	 * @param integer $error the error code
 	 */
-	protected function __construct($name,$tempName,$type,$size,$error)
+	public function __construct($name,$tempName,$type,$size,$error)
 	{
 		$this->_name=$name;
 		$this->_tempName=$tempName;

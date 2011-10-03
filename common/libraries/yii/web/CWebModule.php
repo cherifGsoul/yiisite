@@ -17,7 +17,7 @@
  * that are prefixed with the module ID.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CWebModule.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CWebModule.php 3276 2011-06-15 14:21:12Z alexander.makarow $
  * @package system.web
  * @since 1.0.3
  */

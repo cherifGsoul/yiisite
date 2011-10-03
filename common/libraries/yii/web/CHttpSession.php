@@ -52,7 +52,7 @@
  * {@link CWebApplication::getSession()}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CHttpSession.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CHttpSession.php 3167 2011-04-07 04:25:27Z qiang.xue $
  * @package system.web
  * @since 1.0
  */
@@ -97,7 +97,17 @@ class CHttpSession extends CApplicationComponent implements IteratorAggregate,Ar
 	{
 		if($this->getUseCustomStorage())
 			@session_set_save_handler(array($this,'openSession'),array($this,'closeSession'),array($this,'readSession'),array($this,'writeSession'),array($this,'destroySession'),array($this,'gcSession'));
-		@session_start();
+		if(@session_start()===false && YII_DEBUG)
+		{
+			$message=Yii::t('yii','Failed to start session.');
+			if(function_exists('error_get_last'))
+			{
+				$error=error_get_last();
+				if(isset($error['message']))
+					$message=$error['message'];
+			}
+			Yii::log($message, CLogger::LEVEL_WARNING, 'system.web.CHttpSession');
+		}
 	}
 
 	/**
@@ -143,6 +153,17 @@ class CHttpSession extends CApplicationComponent implements IteratorAggregate,Ar
 	public function setSessionID($value)
 	{
 		session_id($value);
+	}
+
+	/**
+	 * Updates the current session id with a newly generated one .
+	 * Please refer to {@link http://php.net/session_regenerate_id} for more details.
+	 * @param boolean $deleteOldSession Whether to delete the old associated session file or not.
+	 * @since 1.1.8
+	 */
+	public function regenerateID($deleteOldSession=false)
+	{
+		session_regenerate_id($deleteOldSession);
 	}
 
 	/**

@@ -14,7 +14,7 @@
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @author Christophe Boulain <Christophe.Boulain@gmail.com>
- * @version $Id: CMssqlColumnSchema.php 2817 2011-01-05 19:18:55Z qiang.xue $
+ * @version $Id: CMssqlColumnSchema.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.db.schema.mssql
  * @since 1.0.4
  */
@@ -36,7 +36,7 @@ class CMssqlColumnSchema extends CDbColumnSchema
 			$this->type='string';
 	}
 
-	/*
+	/**
 	 * Extracts the default value for the column.
 	 * The value is typecasted to correct PHP type.
 	 * @param mixed $defaultValue the default value obtained from metadata

@@ -18,7 +18,7 @@
  * See {@link CCache} manual for common cache operations that are supported by CFileCache.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CFileCache.php 2853 2011-01-14 09:53:06Z keyboard.idol@gmail.com $
+ * @version $Id: CFileCache.php 3300 2011-06-23 14:29:56Z qiang.xue $
  * @package system.caching
  * @since 1.0.6
  */
@@ -199,7 +199,7 @@ class CFileCache extends CCache
 	 * @param boolean $expiredOnly whether to removed expired cache files only. If true, all cache files under {@link cachePath} will be removed.
 	 * @param string $path the path to clean with. If null, it will be {@link cachePath}.
 	 */
-	protected function gc($expiredOnly=true,$path=null)
+	public function gc($expiredOnly=true,$path=null)
 	{
 		if($path===null)
 			$path=$this->cachePath;

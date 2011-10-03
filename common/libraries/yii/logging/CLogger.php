@@ -15,7 +15,7 @@
  * various filter conditions, including log levels and log categories.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CLogger.php 3066 2011-03-13 14:22:55Z qiang.xue $
+ * @version $Id: CLogger.php 3206 2011-05-09 09:26:24Z qiang.xue $
  * @package system.logging
  * @since 1.0
  */
@@ -34,6 +34,15 @@ class CLogger extends CComponent
 	 * @since 1.1.0
 	 */
 	public $autoFlush=10000;
+	/**
+	 * @var boolean this property will be passed as the parameter to {@link flush()} when it is
+	 * called in {@link log()} due to the limit of {@link autoFlush} being reached.
+	 * By default, this property is false, meaning the filtered messages are still kept in the memory
+	 * by each log route after calling {@link flush()}. If this is true, the filtered messages
+	 * will be written to the actual medium each time {@link flush()} is called within {@link log()}.
+	 * @since 1.1.8
+	 */
+	public $autoDump=false;
 	/**
 	 * @var array log messages
 	 */
@@ -69,7 +78,7 @@ class CLogger extends CComponent
 		$this->_logs[]=array($message,$level,$category,microtime(true));
 		$this->_logCount++;
 		if($this->autoFlush>0 && $this->_logCount>=$this->autoFlush)
-			$this->flush();
+			$this->flush($this->autoDump);
 	}
 
 	/**
@@ -253,6 +262,7 @@ class CLogger extends CComponent
 	 * Removes all recorded messages from the memory.
 	 * This method will raise an {@link onFlush} event.
 	 * The attached event handlers can process the log messages before they are removed.
+	 * @param boolean $dumpLogs whether to process the logs
 	 * @since 1.1.0
 	 */
 	public function flush($dumpLogs=false)

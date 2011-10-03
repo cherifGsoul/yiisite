@@ -28,7 +28,7 @@
  * a verification code matching the code displayed in the CAPTCHA image.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CCaptcha.php 3124 2011-03-25 15:48:05Z qiang.xue $
+ * @version $Id: CCaptcha.php 3203 2011-05-05 14:08:06Z qiang.xue $
  * @package system.web.widgets.captcha
  * @since 1.0
  */
@@ -118,12 +118,15 @@ class CCaptcha extends CWidget
 		{
 			$cs->registerScript('Yii.CCaptcha#'.$id,'dummy');
 			$label=$this->buttonLabel===null?Yii::t('yii','Get a new code'):$this->buttonLabel;
-			$button=$this->buttonType;
+			$options=$this->buttonOptions;
 			if(isset($options['id']))
 				$buttonID=$options['id'];
 			else
 				$buttonID=$options['id']=$id.'_button';
-			$html=CHtml::$button($label, $url, $options);
+			if($this->buttonType==='button')
+				$html=CHtml::button($label, $options);
+			else
+				$html=CHtml::link($label, $url, $options);
 			$js="jQuery('#$id').after(".CJSON::encode($html).");";
 			$selector="#$buttonID";
 		}
@@ -152,7 +155,7 @@ jQuery('$selector').live('click',function(){
 	}
 
 	/**
-	 * Checks if GD with FreeType support is loadded.
+	 * Checks if GD with FreeType support is loaded.
 	 * @return boolean true if GD with FreeType support is loaded, otherwise false
 	 * @since 1.1.5
 	 */

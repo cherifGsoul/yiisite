@@ -12,7 +12,7 @@
  * CMysqlSchema is the class for retrieving metadata information from a MySQL database (version 4.1.x and 5.x).
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CMysqlSchema.php 3099 2011-03-19 01:26:47Z qiang.xue $
+ * @version $Id: CMysqlSchema.php 3304 2011-06-23 14:53:50Z qiang.xue $
  * @package system.db.schema.mysql
  * @since 1.0
  */
@@ -35,6 +35,7 @@ class CMysqlSchema extends CDbSchema
         'date' => 'date',
         'binary' => 'blob',
         'boolean' => 'tinyint(1)',
+		'money' => 'decimal(19,4)',
     );
 
 	/**

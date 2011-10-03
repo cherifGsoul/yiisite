@@ -27,7 +27,7 @@
  * Web accessible, please make sure the view/layout files are protected from Web access.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CThemeManager.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CThemeManager.php 3271 2011-06-14 17:44:25Z qiang.xue $
  * @package system.web
  * @since 1.0
  */
@@ -57,7 +57,7 @@ class CThemeManager extends CApplicationComponent
 		$themePath=$this->getBasePath().DIRECTORY_SEPARATOR.$name;
 		if(is_dir($themePath))
 		{
-			$class=Yii::import($this->themeClass);
+			$class=Yii::import($this->themeClass, true);
 			return new $class($name,$themePath,$this->getBaseUrl().'/'.$name);
 		}
 		else

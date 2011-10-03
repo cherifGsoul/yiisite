@@ -12,7 +12,7 @@
  * CRequiredValidator validates that the specified attribute does not have null or empty value.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CRequiredValidator.php 3120 2011-03-25 01:50:48Z qiang.xue $
+ * @version $Id: CRequiredValidator.php 3157 2011-04-02 19:21:06Z qiang.xue $
  * @package system.validators
  * @since 1.0
  */
@@ -88,12 +88,10 @@ if(value!=" . CJSON::encode($this->requiredValue) . ") {
 		else
 		{
 			if($message===null)
-			{
 				$message=Yii::t('yii','{attribute} cannot be blank.');
-				$message=strtr($message, array(
-					'{attribute}'=>$object->getAttributeLabel($attribute),
-				));
-			}
+			$message=strtr($message, array(
+				'{attribute}'=>$object->getAttributeLabel($attribute),
+			));
 			return "
 if($.trim(value)=='') {
 	messages.push(".CJSON::encode($message).");

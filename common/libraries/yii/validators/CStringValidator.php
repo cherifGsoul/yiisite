@@ -14,7 +14,7 @@
  * Note, this validator should only be used with string-typed attributes.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CStringValidator.php 3132 2011-03-26 19:27:04Z qiang.xue $
+ * @version $Id: CStringValidator.php 3148 2011-03-31 21:44:00Z alexander.makarow $
  * @package system.validators
  * @since 1.0
  */
@@ -69,9 +69,10 @@ class CStringValidator extends CValidator
 			return;
 
 		if(function_exists('mb_strlen') && $this->encoding!==false)
-			$length=mb_strlen($value,$this->encoding ? $this->encoding : Yii::app()->charset);
+			$length=mb_strlen($value, $this->encoding ? $this->encoding : Yii::app()->charset);
 		else
 			$length=strlen($value);
+
 		if($this->min!==null && $length<$this->min)
 		{
 			$message=$this->tooShort!==null?$this->tooShort:Yii::t('yii','{attribute} is too short (minimum is {min} characters).');

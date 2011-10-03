@@ -12,7 +12,7 @@
  * CEmailValidator validates that the attribute value is a valid email address.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CEmailValidator.php 3120 2011-03-25 01:50:48Z qiang.xue $
+ * @version $Id: CEmailValidator.php 3242 2011-05-28 14:31:04Z qiang.xue $
  * @package system.validators
  * @since 1.0
  */
@@ -82,7 +82,8 @@ class CEmailValidator extends CValidator
 	 */
 	public function validateValue($value)
 	{
-		$valid=is_string($value) && (preg_match($this->pattern,$value) || $this->allowName && preg_match($this->fullPattern,$value));
+		// make sure string length is limited to avoid DOS attacks
+		$valid=is_string($value) && strlen($value)<=254 && (preg_match($this->pattern,$value) || $this->allowName && preg_match($this->fullPattern,$value));
 		if($valid)
 			$domain=rtrim(substr($value,strpos($value,'@')+1),'>');
 		if($valid && $this->checkMX && function_exists('checkdnsrr'))

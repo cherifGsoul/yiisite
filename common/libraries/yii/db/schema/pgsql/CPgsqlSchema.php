@@ -12,7 +12,7 @@
  * CPgsqlSchema is the class for retrieving metadata information from a PostgreSQL database.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CPgsqlSchema.php 3099 2011-03-19 01:26:47Z qiang.xue $
+ * @version $Id: CPgsqlSchema.php 3304 2011-06-23 14:53:50Z qiang.xue $
  * @package system.db.schema.pgsql
  * @since 1.0
  */
@@ -37,6 +37,7 @@ class CPgsqlSchema extends CDbSchema
         'date' => 'date',
         'binary' => 'bytea',
         'boolean' => 'boolean',
+		'money' => 'decimal(19,4)',
     );
 
 	private $_sequences=array();

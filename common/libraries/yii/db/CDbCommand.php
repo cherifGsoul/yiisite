@@ -39,7 +39,7 @@
  * </pre>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CDbCommand.php 3056 2011-03-12 21:56:01Z qiang.xue $
+ * @version $Id: CDbCommand.php 3240 2011-05-25 19:22:47Z qiang.xue $
  * @package system.db
  * @since 1.0
  */
@@ -93,6 +93,7 @@ class CDbCommand extends CComponent
 
 	/**
 	 * Set the statement to null when serializing.
+	 * @return array
 	 */
 	public function __sleep()
 	{
@@ -233,8 +234,7 @@ class CDbCommand extends CComponent
 			$this->_statement->bindParam($name,$value,$dataType,$length);
 		else
 			$this->_statement->bindParam($name,$value,$dataType,$length,$driverOptions);
-		if($this->_connection->enableParamLogging)
-			$this->_paramLog[$name]=&$value;
+		$this->_paramLog[$name]=&$value;
 		return $this;
 	}
 
@@ -256,8 +256,7 @@ class CDbCommand extends CComponent
 			$this->_statement->bindValue($name,$value,$this->_connection->getPdoType(gettype($value)));
 		else
 			$this->_statement->bindValue($name,$value,$dataType);
-		if($this->_connection->enableParamLogging)
-			$this->_paramLog[$name]=var_export($value,true);
+		$this->_paramLog[$name]=$value;
 		return $this;
 	}
 
@@ -277,8 +276,7 @@ class CDbCommand extends CComponent
 		foreach($values as $name=>$value)
 		{
 			$this->_statement->bindValue($name,$value,$this->_connection->getPdoType(gettype($value)));
-			if($this->_connection->enableParamLogging)
-				$this->_paramLog[$name]=var_export($value,true);
+			$this->_paramLog[$name]=$value;
 		}
 		return $this;
 	}
@@ -302,7 +300,7 @@ class CDbCommand extends CComponent
 		{
 			$p=array();
 			foreach($pars as $name=>$value)
-				$p[$name]=$name.'='.$value;
+				$p[$name]=$name.'='.var_export($value,true);
 			$par='. Bound with ' .implode(', ',$p);
 		}
 		else
@@ -454,7 +452,7 @@ class CDbCommand extends CComponent
 		{
 			$p=array();
 			foreach($pars as $name=>$value)
-				$p[$name]=$name.'='.$value;
+				$p[$name]=$name.'='.var_export($value,true);
 			$par='. Bound with '.implode(', ',$p);
 		}
 		else
@@ -572,10 +570,12 @@ class CDbCommand extends CComponent
 	 * Columns can contain table prefixes (e.g. "tbl_user.id") and/or column aliases (e.g. "tbl_user.id AS user_id").
 	 * The method will automatically quote the column names unless a column contains some parenthesis
 	 * (which means the column contains a DB expression).
+	 * @param string $option additional option that should be appended to the 'SELECT' keyword. For example,
+	 * in MySQL, the option 'SQL_CALC_FOUND_ROWS' can be used. This parameter is supported since version 1.1.8.
 	 * @return CDbCommand the command object itself
 	 * @since 1.1.6
 	 */
-	public function select($columns='*')
+	public function select($columns='*', $option='')
 	{
 		if(is_string($columns) && strpos($columns,'(')!==false)
 			$this->_query['select']=$columns;
@@ -598,6 +598,8 @@ class CDbCommand extends CComponent
 			}
 			$this->_query['select']=implode(', ',$columns);
 		}
+		if($option!='')
+			$this->_query['select']=$option.' '.$this->_query['select'];
 		return $this;
 	}
 
@@ -1142,14 +1144,25 @@ class CDbCommand extends CComponent
 	{
 		$params=array();
 		$names=array();
+		$placeholders=array();
 		foreach($columns as $name=>$value)
 		{
 			$names[]=$this->_connection->quoteColumnName($name);
-			$params[':'.$name]=$value;
+			if($value instanceof CDbExpression)
+			{
+				$placeholders[] = $value->expression;
+				foreach($value->params as $n => $v)
+					$params[$n] = $v;
+			}
+			else
+			{
+				$placeholders[] = ':' . $name;
+				$params[':' . $name] = $value;
+			}
 		}
 		$sql='INSERT INTO ' . $this->_connection->quoteTableName($table)
 			. ' (' . implode(', ',$names) . ') VALUES ('
-			. implode(', ', array_keys($params)) . ')';
+			. implode(', ', $placeholders) . ')';
 		return $this->setText($sql)->execute($params);
 	}
 
@@ -1169,8 +1182,17 @@ class CDbCommand extends CComponent
 		$lines=array();
 		foreach($columns as $name=>$value)
 		{
-			$params[':'.$name]=$value;
-			$lines[]=$this->_connection->quoteColumnName($name).'=:'.$name;
+			if($value instanceof CDbExpression)
+			{
+				$lines[]=$this->_connection->quoteColumnName($name) . '=' . $value->expression;
+				foreach($value->params as $n => $v)
+					$params[$n] = $v;
+			}
+			else
+			{
+				$lines[]=$this->_connection->quoteColumnName($name) . '=:' . $name;
+				$params[':' . $name]=$value;
+			}
 		}
 		$sql='UPDATE ' . $this->_connection->quoteTableName($table) . ' SET ' . implode(', ', $lines);
 		if(($where=$this->processConditions($conditions))!='')

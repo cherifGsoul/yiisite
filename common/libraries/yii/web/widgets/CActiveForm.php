@@ -141,7 +141,7 @@
  * the <code>performAjaxValidation</code> method and its invocation.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CActiveForm.php 3130 2011-03-26 17:44:15Z qiang.xue $
+ * @version $Id: CActiveForm.php 3253 2011-06-10 23:19:08Z keyboard.idol@gmail.com $
  * @package system.web.widgets
  * @since 1.1.1
  */
@@ -416,6 +416,9 @@ class CActiveForm extends CWidget
 		if(!$this->enableClientValidation)
 			$enableClientValidation=false;
 
+		if(!isset($htmlOptions['class']))
+			$htmlOptions['class']=$this->errorMessageCssClass;
+
 		if(!$enableAjaxValidation && !$enableClientValidation)
 			return CHtml::error($model,$attribute,$htmlOptions);
 
@@ -430,7 +433,7 @@ class CActiveForm extends CWidget
 			'inputID'=>$inputID,
 			'errorID'=>$htmlOptions['id'],
 			'model'=>get_class($model),
-			'name'=>$attribute,
+			'name'=>CHtml::resolveName($model, $attribute),
 			'enableAjaxValidation'=>$enableAjaxValidation,
 		);
 
@@ -472,8 +475,6 @@ class CActiveForm extends CWidget
 				$option['clientValidation']="js:function(value, messages, attribute) {\n".implode("\n",$validators)."\n}";
 		}
 
-		if(!isset($htmlOptions['class']))
-			$htmlOptions['class']=$this->errorMessageCssClass;
 		$html=CHtml::error($model,$attribute,$htmlOptions);
 		if($html==='')
 		{

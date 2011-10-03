@@ -50,7 +50,7 @@
  * </ul>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CValidator.php 3113 2011-03-24 21:49:40Z qiang.xue $
+ * @version $Id: CValidator.php 3160 2011-04-03 01:08:23Z qiang.xue $
  * @package system.validators
  * @since 1.0
  */

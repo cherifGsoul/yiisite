@@ -58,7 +58,7 @@
  * For object-based filters, the '+' and '-' operators are following the class name.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CController.php 3058 2011-03-13 04:20:12Z qiang.xue $
+ * @version $Id: CController.php 3307 2011-06-23 15:58:37Z qiang.xue $
  * @package system.web
  * @since 1.0
  */
@@ -320,7 +320,7 @@ class CController extends CBaseController
 	/**
 	 * This method is invoked when the request parameters do not satisfy the requirement of the specified action.
 	 * The default implementation will throw a 400 HTTP exception.
-	 * @pararm CAction $action the action being executed
+	 * @param CAction $action the action being executed
 	 * @since 1.1.7
 	 */
 	public function invalidActionParams($action)
@@ -545,7 +545,7 @@ class CController extends CBaseController
 	{
 		if(($module=$this->getModule())===null)
 			$module=Yii::app();
-		return $module->getViewPath().'/'.$this->getId();
+		return $module->getViewPath().DIRECTORY_SEPARATOR.$this->getId();
 	}
 
 	/**
@@ -874,6 +874,28 @@ class CController extends CBaseController
 		else
 			throw new CException(Yii::t('yii','{controller} cannot find the requested view "{view}".',
 				array('{controller}'=>get_class($this), '{view}'=>$view)));
+	}
+
+	/**
+	 * Renders a named clip with the supplied parameters.
+	 * This is similar to directly accessing the {@link clips} property.
+	 * The main difference is that it can take an array of named parameters
+	 * which will replace the corresponding placeholders in the clip.
+	 * @param string $name the name of the clip
+	 * @param array $params an array of named parameters (name=>value) that should replace
+	 * their corresponding placeholders in the clip
+	 * @param boolean $return whether to return the clip content or echo it.
+	 * @return mixed either the clip content or null
+	 * @since 1.1.8
+	 */
+	public function renderClip($name,$params=array(),$return=false)
+	{
+		$text=isset($this->clips[$name]) ? strtr($this->clips[$name], $params) : '';
+
+		if($return)
+			return $text;
+		else
+			echo $text;
 	}
 
 	/**

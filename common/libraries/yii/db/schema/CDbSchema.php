@@ -12,7 +12,7 @@
  * CDbSchema is the base class for retrieving metadata information.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CDbSchema.php 3069 2011-03-14 00:28:38Z qiang.xue $
+ * @version $Id: CDbSchema.php 3297 2011-06-22 21:46:11Z qiang.xue $
  * @package system.db.schema
  * @since 1.0
  */
@@ -524,7 +524,7 @@ abstract class CDbSchema extends CComponent
 	 * @param string $name the name of the index. The name will be properly quoted by the method.
 	 * @param string $table the table that the new index will be created for. The table name will be properly quoted by the method.
 	 * @param string $column the column(s) that should be included in the index. If there are multiple columns, please separate them
-	 * by commas. The column names will be properly quoted by the method.
+	 * by commas. Each column name will be properly quoted by the method, unless a parenthesis is found in the name.
 	 * @param boolean $unique whether to add UNIQUE constraint on the created index.
 	 * @return string the SQL statement for creating a new index.
 	 * @since 1.1.6
@@ -534,7 +534,12 @@ abstract class CDbSchema extends CComponent
 		$cols=array();
 		$columns=preg_split('/\s*,\s*/',$column,-1,PREG_SPLIT_NO_EMPTY);
 		foreach($columns as $col)
-			$cols[]=$this->quoteColumnName($col);
+		{
+			if(strpos($col,'(')!==false)
+				$cols[]=$col;
+			else
+				$cols[]=$this->quoteColumnName($col);
+		}
 		return ($unique ? 'CREATE UNIQUE INDEX ' : 'CREATE INDEX ')
 			. $this->quoteTableName($name).' ON '
 			. $this->quoteTableName($table).' ('.implode(', ',$cols).')';

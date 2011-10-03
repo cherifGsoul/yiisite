@@ -23,7 +23,7 @@
  * See {@link CCache} manual for common cache operations that are supported by CDbCache.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CDbCache.php 3069 2011-03-14 00:28:38Z qiang.xue $
+ * @version $Id: CDbCache.php 3198 2011-04-30 21:14:17Z qiang.xue $
  * @package system.caching
  * @since 1.0
  */
@@ -214,11 +214,11 @@ EOD;
 		{
 			$duration=$db->queryCachingDuration;
 			$db->queryCachingDuration=0;
-			$rows=$db->createCommand($sql)->queryRows();
+			$rows=$db->createCommand($sql)->queryAll();
 			$db->queryCachingDuration=$duration;
 		}
 		else
-			$rows=$db->createCommand($sql)->queryRows();
+			$rows=$db->createCommand($sql)->queryAll();
 
 		$results=array();
 		foreach($keys as $key)

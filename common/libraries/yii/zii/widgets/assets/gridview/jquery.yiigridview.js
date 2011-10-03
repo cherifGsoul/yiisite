@@ -5,7 +5,7 @@
  * @link http://www.yiiframework.com/
  * @copyright Copyright &copy; 2008-2010 Yii Software LLC
  * @license http://www.yiiframework.com/license/
- * @version $Id: jquery.yiigridview.js 208 2010-08-06 20:03:22Z qiang.xue $
+ * @version $Id: jquery.yiigridview.js 3286 2011-06-16 17:34:34Z qiang.xue $
  */
 
 ;(function($) {
@@ -115,6 +115,7 @@
 		// beforeAjaxUpdate: function(id) {},
 		// afterAjaxUpdate: function(id, data) {},
 		// selectionChanged: function(id) {},
+		// url: 'ajax request URL'
 	};
 
 	$.fn.yiiGridView.settings = {};
@@ -135,7 +136,8 @@
 	 * @return string the URL that generates the grid view content.
 	 */
 	$.fn.yiiGridView.getUrl = function(id) {
-		return $('#'+id+' > div.keys').attr('title');
+		var settings = $.fn.yiiGridView.settings[id];
+		return settings.url || $('#'+id+' > div.keys').attr('title');
 	};
 
 	/**
@@ -169,6 +171,12 @@
 	$.fn.yiiGridView.update = function(id, options) {
 		var settings = $.fn.yiiGridView.settings[id];
 		$('#'+id).addClass(settings.loadingClass);
+
+		if(options && options.error !== undefined) {
+			var customError=options.error;
+			delete options.error;
+		}
+
 		options = $.extend({
 			type: 'GET',
 			url: $.fn.yiiGridView.getUrl(id),
@@ -186,6 +194,11 @@
 				$('#'+id).removeClass(settings.loadingClass);
 				if(XHR.readyState == 0 || XHR.status == 0)
 					return;
+				if(customError!==undefined) {
+					var ret = customError(XHR);
+					if( ret!==undefined && !ret)
+						return;
+				}
 				var err='';
 				switch(textStatus) {
 					case 'timeout':

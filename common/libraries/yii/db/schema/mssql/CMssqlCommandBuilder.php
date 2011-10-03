@@ -16,7 +16,7 @@
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @author Christophe Boulain <Christophe.Boulain@gmail.com>
  * @author Wei Zhuo <weizhuo[at]gmail[dot]com>
- * @version $Id: CMssqlCommandBuilder.php 2821 2011-01-06 17:41:53Z qiang.xue $
+ * @version $Id: CMssqlCommandBuilder.php 3239 2011-05-25 19:05:47Z qiang.xue $
  * @package system.db.schema.mssql
  * @since 1.0.4
  */
@@ -73,7 +73,11 @@ class CMssqlCommandBuilder extends CDbCommandBuilder
 				if ($table->sequenceName !== null && $column->isPrimaryKey === true) continue;
 				if ($column->dbType === 'timestamp') continue;
 				if($value instanceof CDbExpression)
+				{
 					$fields[]=$column->rawName.'='.$value->expression;
+					foreach($value->params as $n=>$v)
+						$values[$n]=$v;
+				}
 				else if($bindByPosition)
 				{
 					$fields[]=$column->rawName.'=?';

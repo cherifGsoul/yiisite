@@ -24,7 +24,7 @@
  * the {@link setBasePath basePath}.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CAssetManager.php 3001 2011-02-24 16:42:44Z alexander.makarow $
+ * @version $Id: CAssetManager.php 3289 2011-06-18 21:20:13Z qiang.xue $
  * @package system.web
  * @since 1.0
  */
@@ -55,10 +55,24 @@ class CAssetManager extends CApplicationComponent
 	public $linkAssets=false;
 	/**
 	 * @var array list of directories and files which should be excluded from the publishing process.
-	 * Defaults to exclude '.svn' files only. This option has no effect if {@link linkAssets} is enabled.	 
+	 * Defaults to exclude '.svn' files only. This option has no effect if {@link linkAssets} is enabled.
 	 * @since 1.1.6
 	 **/
 	public $excludeFiles=array('.svn');
+	/**
+	 * @var integer the permission to be set for newly generated asset files.
+	 * This value will be used by PHP chmod function.
+	 * Defaults to 0666, meaning the file is read-writable by all users.
+	 * @since 1.1.8
+	 */
+	public $newFileMode=0666;
+	/**
+	 * @var integer the permission to be set for newly generated asset directories.
+	 * This value will be used by PHP chmod function.
+	 * Defaults to 0777, meaning the directory can be read, written and executed by all users.
+	 * @since 1.1.8
+	 */
+	public $newDirMode=0777;
 	/**
 	 * @var string base web accessible path for storing private files
 	 */
@@ -169,7 +183,7 @@ class CAssetManager extends CApplicationComponent
 						if(!is_dir($dstDir))
 						{
 							mkdir($dstDir);
-							@chmod($dstDir,0777);
+							@chmod($dstDir, $this->newDirMode);
 						}
 						symlink($src,$dstFile);
 					}
@@ -179,9 +193,10 @@ class CAssetManager extends CApplicationComponent
 					if(!is_dir($dstDir))
 					{
 						mkdir($dstDir);
-						@chmod($dstDir,0777);
+						@chmod($dstDir, $this->newDirMode);
 					}
 					copy($src,$dstFile);
+					@chmod($dstFile, $this->newFileMode);
 				}
 
 				return $this->_published[$path]=$this->getBaseUrl()."/$dir/$fileName";
@@ -197,7 +212,14 @@ class CAssetManager extends CApplicationComponent
 						symlink($src,$dstDir);
 				}
 				else if(!is_dir($dstDir) || $forceCopy)
-					CFileHelper::copyDirectory($src,$dstDir,array('exclude'=>$this->excludeFiles,'level'=>$level));
+				{
+					CFileHelper::copyDirectory($src,$dstDir,array(
+						'exclude'=>$this->excludeFiles,
+						'level'=>$level,
+						'newDirMode'=>$this->newDirMode,
+						'newFileMode'=>$this->newFileMode,
+					));
+				}
 
 				return $this->_published[$path]=$this->getBaseUrl().'/'.$dir;
 			}

@@ -35,7 +35,7 @@
  * </pre>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CConsoleCommand.php 3015 2011-03-02 17:51:26Z qiang.xue $
+ * @version $Id: CConsoleCommand.php 3276 2011-06-15 14:21:12Z alexander.makarow $
  * @package system.console
  * @since 1.0
  */

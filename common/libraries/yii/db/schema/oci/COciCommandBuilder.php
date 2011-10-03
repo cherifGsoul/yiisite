@@ -12,7 +12,7 @@
  * COciCommandBuilder provides basic methods to create query commands for tables.
  *
  * @author Ricardo Grana <rickgrana@yahoo.com.br>
- * @version $Id: COciCommandBuilder.php 2799 2011-01-01 19:31:13Z qiang.xue $
+ * @version $Id: COciCommandBuilder.php 3303 2011-06-23 14:45:02Z qiang.xue $
  * @package system.db.schema.oci
  * @since 1.0.5
  */
@@ -92,7 +92,11 @@ EOD;
 			{
 				$fields[]=$column->rawName;
 				if($value instanceof CDbExpression)
+				{
 					$placeholders[]=$value->expression;
+					foreach($value->params as $n=>$v)
+						$values[$n]=$v;
+				}
 				else
 				{
 					$placeholders[]=self::PARAM_PREFIX.$i;
@@ -104,9 +108,9 @@ EOD;
 
 		$sql="INSERT INTO {$table->rawName} (".implode(', ',$fields).') VALUES ('.implode(', ',$placeholders).')';
 
-		if(is_string($table->primaryKey))
+		if(is_string($table->primaryKey) && ($column=$table->getColumn($table->primaryKey))!==null && $column->type!=='string')
 		{
-			$sql.=' RETURNING "'.$table->primaryKey.'" INTO :RETURN_ID';
+			$sql.=' RETURNING "'.$column->rawName.'" INTO :RETURN_ID';
 			$command=$this->getDbConnection()->createCommand($sql);
 			$command->bindParam(':RETURN_ID', $this->returnID, PDO::PARAM_INT, 12);
 			$table->sequenceName='RETURN_ID';

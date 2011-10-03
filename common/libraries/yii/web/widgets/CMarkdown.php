@@ -23,7 +23,7 @@
  * </ul>
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CMarkdown.php 2799 2011-01-01 19:31:13Z qiang.xue $
+ * @version $Id: CMarkdown.php 3204 2011-05-05 21:36:32Z alexander.makarow $
  * @package system.web.widgets
  * @since 1.0
  */
@@ -97,7 +97,7 @@ class CMarkdown extends COutputProcessor
 	 * Returns the markdown parser instance.
 	 * This method calls {@link createMarkdownParser} to create the parser instance.
 	 * Call this method multipe times will only return the same instance.
-	 * @param CMarkdownParser the parser instance
+	 * @return CMarkdownParser the parser instance
 	 * @since 1.0.1
 	 */
 	public function getMarkdownParser()

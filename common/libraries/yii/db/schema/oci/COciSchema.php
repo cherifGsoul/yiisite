@@ -12,7 +12,7 @@
  * COciSchema is the class for retrieving metadata information from an Oracle database.
  *
  * @author Ricardo Grana <rickgrana@yahoo.com.br>
- * @version $Id: COciSchema.php 3099 2011-03-19 01:26:47Z qiang.xue $
+ * @version $Id: COciSchema.php 3304 2011-06-23 14:53:50Z qiang.xue $
  * @package system.db.schema.oci
  * @since 1.0.5
  */
@@ -37,6 +37,7 @@ class COciSchema extends CDbSchema
         'date' => 'DATE',
         'binary' => 'BLOB',
         'boolean' => 'NUMBER(1)',
+		'money' => 'NUMBER(19,4)',
     );
 
 	/**

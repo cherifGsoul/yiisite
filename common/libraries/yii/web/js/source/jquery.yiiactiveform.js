@@ -5,7 +5,7 @@
  * @link http://www.yiiframework.com/
  * @copyright Copyright &copy; 2008-2010 Yii Software LLC
  * @license http://www.yiiframework.com/license/
- * @version $Id: jquery.yiiactiveform.js 3129 2011-03-26 16:30:16Z qiang.xue $
+ * @version $Id: jquery.yiiactiveform.js 3158 2011-04-02 22:48:01Z qiang.xue $
  * @since 1.1.1
  */
 
@@ -302,6 +302,10 @@
 			dataType : 'json',
 			success : function(data) {
 				if (data != null && typeof data == 'object') {
+					$.each(settings.attributes, function() {
+						if (!this.enableAjaxValidation)
+							delete data[this.id];
+					});
 					successCallback($.extend({}, messages, data));
 				}
 				else {

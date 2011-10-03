@@ -12,7 +12,7 @@
  * CNumberValidator validates that the attribute value is a number.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
- * @version $Id: CNumberValidator.php 3120 2011-03-25 01:50:48Z qiang.xue $
+ * @version $Id: CNumberValidator.php 3190 2011-04-16 23:40:21Z qiang.xue $
  * @package system.validators
  * @since 1.0
  */
@@ -135,7 +135,7 @@ if(!value.match($pattern)) {
 		if($this->min!==null)
 		{
 			$js.="
-if(value.length<{$this->min}) {
+if(value<{$this->min}) {
 	messages.push(".CJSON::encode($tooSmall).");
 }
 ";
