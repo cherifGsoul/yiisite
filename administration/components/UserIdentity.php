@@ -20,8 +20,8 @@ class UserIdentity extends CUserIdentity {
 		else
 		$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
-		}
-*/
+		}*/
+
 	private $_id;
 	private $_name;
 	/**

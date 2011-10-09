@@ -9,7 +9,7 @@ $admin_conf = include '../administration/config/main.php';
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 $common_conf = array(
-    'import' => array(
+    'import'=>array(
         'site.common.models.*',    
     ),
     'components' => array(
@@ -20,6 +20,7 @@ $common_conf = array(
             'password' => 'design',
             'charset' => 'utf8',
             'tablePrefix' => 'tbl_',
+	    'enableProfiling'=> true,
         ),
         'params' => array(
             // this is used in contact page

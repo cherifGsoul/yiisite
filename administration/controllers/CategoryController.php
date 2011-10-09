@@ -65,14 +65,19 @@ class CategoryController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-                if(isset($_POST['Category']))
-		{       
-                        if(isset($_POST['Category']['root'])){
-                            $root=  Category::model()->roots()->findByPk($_POST['Category']['root']);
-                        }
+
+		if(isset($_POST['Category']))
+		{
 			$model->attributes=$_POST['Category'];
-			if($model->saveNode())
-				$this->redirect(array('view','id'=>$model->id));
+			if (!empty($_POST['Category']['parent_id'])){
+				$root=Category::model()->findByPk($_POST['Category']['parent_id']);
+				$model-> appendTo($root);
+			
+			}else{
+				$model->saveNode();
+			}
+			
+			$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -95,7 +100,7 @@ class CategoryController extends Controller
 		if(isset($_POST['Category']))
 		{
 			$model->attributes=$_POST['Category'];
-			if($model->save())
+			if($model->saveNode())
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
@@ -157,7 +162,7 @@ class CategoryController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Category::model()->findByPk((int)$id);
+		$model=Category::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

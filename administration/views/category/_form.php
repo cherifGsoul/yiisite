@@ -16,34 +16,15 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'description'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'lft'); ?>
-		<?php echo $form->textField($model,'lft'); ?>
-		<?php echo $form->error($model,'lft'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'rgt'); ?>
-		<?php echo $form->textField($model,'rgt'); ?>
-		<?php echo $form->error($model,'rgt'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'level'); ?>
-		<?php echo $form->textField($model,'level'); ?>
-		<?php echo $form->error($model,'level'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'root'); ?>
-		<?php echo $form->dropDownList($model,'root',$model->listCategories(), array('empty'=>('Select'))); ?>
-		<?php echo $form->error($model,'root'); ?>
-            <?php print_r($model->listCategories());?>
+	
+	<div>
+		<?php echo $form->labelEx($model,'parent'); ?>
+		<?php echo $form->dropDownList($model,'parent_id', $model->listParent(),array('empty'=>'none')); ?>
+		<?php echo $form->error($model, 'description'); ?>
 	</div>
 
 	<div class="row buttons">

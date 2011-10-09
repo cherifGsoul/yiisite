@@ -23,13 +23,13 @@ class PageController extends GController {
         // $this->performAjaxValidation($model);
 
         if (isset($_POST['Page'])) {
-           $model -> attributes = $_POST['Page'];
-			if (!empty($_POST['Page']['parent_id'])) {
-					$root = Page::model()->findByPk($_POST['Page']['parent_id']);
-					$model -> appendTo($root);
-				}else{
-					$model -> saveNode();
-				}
+        	$model -> attributes = $_POST['Page'];
+		if (!empty($_POST['Page']['parent_id'])) {
+			$root = Page::model()->findByPk($_POST['Page']['parent_id']);
+			$model -> appendTo($root);
+		}else{
+			$model -> saveNode();
+		}
 
 			//if ($model -> saveNode()) {
 				
@@ -56,6 +56,11 @@ class PageController extends GController {
 		if (isset($_POST['Page'])) {
 			$model -> attributes = $_POST['Page'];
 			if ($model -> saveNode())
+				if (empty($_POST['Page']['parent_id'])){
+					$model->moveAsRoot();
+				}elseif(!is_null($root=$model->findByPk($_POST['Page']['parent_id']))){
+					$model->moveAsLast($root);
+				 }
 				$this -> redirect(array('view', 'id' => $model -> id));
 		}
 		$this -> render('update', array('model' => $model, ));

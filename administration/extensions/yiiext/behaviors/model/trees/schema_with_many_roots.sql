@@ -5,8 +5,8 @@ CREATE TABLE `category` (
   `rgt` INT(10) UNSIGNED NOT NULL,
   `level` SMALLINT(5) UNSIGNED NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `root` (`root`)
+  KEY `root` (`root`),
   KEY `lft` (`lft`),
   KEY `rgt` (`rgt`),
-  KEY `level` (`level`),
-)
+  KEY `level` (`level`)
+);
