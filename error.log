@@ -1,0 +1,529 @@
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:39 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:18:43 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:21:59 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{', expecting '(' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:02 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:22:52 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '{' in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:23:03 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/update&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_OBJECT_OPERATOR in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 60, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:25:24 2011] [error] [client 127.0.0.1] PHP   5. CWebApplication->createController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:271, referer: http://yiisite.dev/administration/index.php?r=page/view&id=4
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP Fatal error:  Function name must be a string in /home/cherif/server/yiisite/administration/controllers/PageController.php on line 61, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  14. CAction->runWithParamsInternal() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:48, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  15. ReflectionMethod->invokeArgs() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CAction.php:104, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Tue Oct 04 23:40:09 2011] [error] [client 127.0.0.1] PHP  16. PageController->actionUpdate() /home/cherif/server/yiisite/administration/controllers/PageController.php:0, referer: http://yiisite.dev/administration/index.php?r=page/update&id=5
+[Sat Oct 08 10:38:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:20 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:32 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:38:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:40:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:41:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:41:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:41:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:41:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:42:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:42:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:42:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:43:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:43:46 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:43:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:43:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:44:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:44:42 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:44:47 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:44:56 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:34 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:44 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:57 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:45:59 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 10:53:21 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:33:55 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:34:01 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:34:16 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:34:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:35:06 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:35:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:35:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:35:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 11:36:37 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:29:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/cherif/server/yiisite/administration/models/Content.php on line 85, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  14. PostController->actionCreate() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  15. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  16. include() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:421, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:29:57 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP Fatal error:  Undefined class constant 'STATUS_APPROVED' in /home/cherif/server/yiisite/administration/models/Content.php on line 82, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  14. PostController->actionCreate() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  15. CActiveRecord->__construct() /home/cherif/server/yiisite/administration/controllers/PostController.php:64, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord->getMetaData() /home/cherif/server/yiisite/common/libraries/yii/db/ar/CActiveRecord.php:62, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  17. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/db/ar/CActiveRecord.php:387, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  18. CActiveRecordMetaData->__construct() /home/cherif/server/yiisite/common/libraries/yii/db/ar/CActiveRecord.php:372, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] PHP  19. Content->relations() /home/cherif/server/yiisite/common/libraries/yii/db/ar/CActiveRecord.php:2301, referer: http://yiisite.dev/administration/index.php?r=dashboard/login
+[Sat Oct 08 12:30:59 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:32:16 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:32:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:34:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:35:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:35:32 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:35:35 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:35:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:35:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:37:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:37:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:37:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:37:59 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:38:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 12:38:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:16:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:16:05 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:16:12 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:16:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:16:20 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:23:26 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:23:28 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:24:18 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:24:19 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:36:16 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:36:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:38:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:40:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:40:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:41:26 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:59:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 21:59:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:02:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:02:44 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:13:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:15:26 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:15:57 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:20:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:20:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:20:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:20:19 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:20:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:22:33 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:22:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:22:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:23:22 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:23:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:23:47 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:23:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:24:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:24:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:24:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:24:16 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:24:34 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:27:51 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:35:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:41:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:41:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 22:41:59 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:26:07 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:26:12 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:26:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:30:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:31:20 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:32:19 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:33:35 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:47:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:49:51 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:53:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:53:07 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:53:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:53:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:53:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:56:42 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:57:06 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:58:35 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:58:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:58:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:58:51 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:59:56 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sat Oct 08 23:59:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:01:27 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:01:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:01:56 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:32 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:42 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:02:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:03:01 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:15:25 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:17:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:18:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:18:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:18:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:19:26 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:19:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:19:31 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:22:31 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:22:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cherif/server/yiisite/administration/models/Page.php on line 58, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  14. PageController->actionIndex() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  15. CActiveDataProvider->__construct() /home/cherif/server/yiisite/administration/controllers/PageController.php:91, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/web/CActiveDataProvider.php:72, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0, referer: http://yiisite.dev/administration/index.php?r=page/view&id=20
+[Sun Oct 09 00:23:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:05 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:07 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:24:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:26:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:26:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:29:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:29:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:30:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:30:22 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:31:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:31:07 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:31:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:31:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:32:05 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:32:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:34:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:34:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:34:54 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:34:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:35:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:36:05 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:36:06 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:36:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:36:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:37:21 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:37:24 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:37:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:37:34 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:37:37 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:38:34 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:38:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:38:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:39:13 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:39:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:40:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:41:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:41:06 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:41:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:41:42 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ')' in /home/cherif/server/yiisite/administration/models/Content.php on line 193, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  14. PageController->actionIndex() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  15. CActiveDataProvider->__construct() /home/cherif/server/yiisite/administration/controllers/PageController.php:91, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/web/CActiveDataProvider.php:72, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  18. include() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:421, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] PHP  19. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0, referer: http://yiisite.dev/administration/index.php?r=page/admin
+[Sun Oct 09 00:46:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:46:33 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:48:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:52:27 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:52:28 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:53:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:53:33 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:54:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:54:10 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:54:12 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:54:33 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:54:42 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:55:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:55:31 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:56:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:57:15 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:57:19 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:57:29 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:57:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 00:59:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:02:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:02:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:02:54 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:08:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:10:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:10:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:13:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:13:19 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:13:35 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:13:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:13:59 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:15:03 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:15:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:15:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:16:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:17:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:18:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:19:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:19:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:23:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:23:40 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:23:46 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:24:16 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:24:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:25:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:28:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:28:37 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:29:01 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:29:37 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:29:48 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:30:14 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:35:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:35:07 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:35:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:36:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:36:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:36:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:36:52 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:37:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:37:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:41:06 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:41:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:41:13 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:41:15 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:42:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:53:39 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 01:54:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:22:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:22:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:22:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:56:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:56:04 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:56:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:56:12 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 02:56:41 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:38 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:45 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:51 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:53 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:55 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:41:56 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:44:08 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:44:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 13:44:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:29:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:01 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:09 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:11 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:12 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:20 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:30:44 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:31:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:35:20 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:35:23 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:35:27 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:35:36 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:03 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:13 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:17 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:43 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:46 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:36:49 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:37:00 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 17:37:02 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:29:55 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_CASE in /home/cherif/server/yiisite/administration/models/Taxonomy.php on line 130
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  14. CategoryController->actionIndex() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  15. CActiveDataProvider->__construct() /home/cherif/server/yiisite/administration/controllers/CategoryController.php:132
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/web/CActiveDataProvider.php:72
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  18. include() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:421
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] PHP  19. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0
+[Sun Oct 09 18:30:34 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:32:44 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:32:50 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:32:58 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:52:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 18:52:30 2011] [error] [client 127.0.0.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/cherif/server/yiisite/administration/models/Tag.php on line 31
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  14. TagController->actionIndex() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  15. CActiveDataProvider->__construct() /home/cherif/server/yiisite/administration/controllers/TagController.php:130
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/web/CActiveDataProvider.php:72
+[Sun Oct 09 19:06:10 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected '}' in /home/cherif/server/yiisite/administration/models/Tag.php on line 31
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  14. TagController->actionIndex() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  15. CActiveDataProvider->__construct() /home/cherif/server/yiisite/administration/controllers/TagController.php:130
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  16. CActiveRecord::model() /home/cherif/server/yiisite/common/libraries/yii/web/CActiveDataProvider.php:72
+[Sun Oct 09 19:07:29 2011] [error] [client 127.0.0.1] PHP  17. YiiBase::autoload() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:0
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ';' in /home/cherif/server/yiisite/administration/views/category/_form.php on line 26, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   2. CApplication->run() /home/cherif/server/yiisite/administration/index.php:13, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   3. CWebApplication->processRequest() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:158, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   4. CWebApplication->runController() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:136, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   5. CController->run() /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:277, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   6. CController->runActionWithFilters() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:257, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   7. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:283, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   8. CInlineFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:131, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP   9. CController->filterAccessControl() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CInlineFilter.php:59, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  10. CFilter->filter() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:1144, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  11. CFilterChain->run() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilter.php:41, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  12. CController->runAction() /home/cherif/server/yiisite/common/libraries/yii/web/filters/CFilterChain.php:134, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  13. CInlineAction->runWithParams() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:300, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  14. CategoryController->actionCreate() /home/cherif/server/yiisite/common/libraries/yii/web/actions/CInlineAction.php:50, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  15. CController->render() /home/cherif/server/yiisite/administration/controllers/CategoryController.php:78, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  16. CController->renderPartial() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:779, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  17. CBaseController->renderFile() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:866, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  18. CBaseController->renderInternal() /home/cherif/server/yiisite/common/libraries/yii/web/CBaseController.php:88, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  19. require() /home/cherif/server/yiisite/common/libraries/yii/web/CBaseController.php:119, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  20. CController->renderPartial() /home/cherif/server/yiisite/administration/views/category/create.php:15, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  21. CBaseController->renderFile() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:866, referer: http://yiisite.dev/administration/index.php?r=category/index
+[Sun Oct 09 19:31:46 2011] [error] [client 127.0.0.1] PHP  22. CBaseController->renderInternal() /home/cherif/server/yiisite/common/libraries/yii/web/CBaseController.php:88, referer: http://yiisite.dev/administration/index.php?r=category/index
