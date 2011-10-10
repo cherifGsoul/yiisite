@@ -65,7 +65,7 @@ class Content extends CActiveRecord
 			array('title, status', 'required'),
 			array('status', 'in', 'range'=>array(1,2,3)),
 			array('title, meta_robots', 'length', 'max'=>128),
-			array('excerpt, meta_description, meta_keys', 'safe'),
+			array('body, excerpt, meta_description, meta_keys,content', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('title, type, status', 'safe', 'on'=>'search'),
@@ -80,9 +80,8 @@ class Content extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			/*'Categories' => array(self::MANY_MANY, 'Category', '{{category_content}}(content_id, category_id)'),
 			'comments' => array(self::HAS_MANY, 'Comment', 'post_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
-			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),*/
+			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
 		
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 			'taxonomy' => array(self::MANY_MANY, 'Taxonomy', '{{taxonomy_content}}(taxonomy_id, content_id)'),

@@ -29,8 +29,8 @@ class Post extends Content {
 		return parent::model($className);
 	}
 
-	//public function rules()
-	//{
+	/*public function rules()
+	{
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		//return array(
