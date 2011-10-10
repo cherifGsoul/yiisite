@@ -29,4 +29,10 @@ class Tag extends Taxonomy
 			'condition'=>"type='tag'",
 		);
 	}
+
+	public function beforeSave()
+	{
+		$this->type="tag";
+		return parent::beforeSave();
+	}
 }
