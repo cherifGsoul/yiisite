@@ -65,7 +65,7 @@ class Content extends CActiveRecord
 			array('title, status', 'required'),
 			array('status', 'in', 'range'=>array(1,2,3)),
 			array('title, meta_robots', 'length', 'max'=>128),
-			array('excerpt, meta_description, meta_keys', 'safe'),
+			array('excerpt, meta_description, meta_keys, content', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('title, type, status', 'safe', 'on'=>'search'),
