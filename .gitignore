@@ -1,0 +1,8 @@
+administration/assets/*
+administration/runtime/*
+assets/*
+frontend/runtime/*
+frontend/webroot/assets/*
+access.log
+error.log
+common/config/main.php
