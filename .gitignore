@@ -1,0 +1,9 @@
+administration/assets/*
+administration/runtime/*
+assets/*
+frontend/runtime/*
+frontend/webroot/assets/*
+access.log
+error.log
+common/config/main.php
+yii-1.1.0-validator-cheatsheet.pdf
