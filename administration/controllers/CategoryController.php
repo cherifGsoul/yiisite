@@ -62,13 +62,14 @@ class CategoryController extends Controller
 	public function actionCreate()
 	{
 		$model=new Category;
+		//$model->enableBehavior('tree');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Category']))
 		{
-			$model->attributes=$_POST['Category'];
+			$model-> attributes = $_POST['Category'];
 			if (!empty($_POST['Category']['parent_id'])){
 				$root=Category::model()->findByPk($_POST['Category']['parent_id']);
 				$model-> appendTo($root);

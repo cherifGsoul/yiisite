@@ -41,6 +41,7 @@ class Post extends Content {
 		//);
 	//}
 
+
 	public function defaultScope()
 	{
 		return array(

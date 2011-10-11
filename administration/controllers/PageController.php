@@ -31,10 +31,7 @@ class PageController extends GController {
 			$model -> saveNode();
 		}
 
-			//if ($model -> saveNode()) {
-				
-				$this -> redirect(array('view', 'id' => $model -> id));
-			//}
+		$this -> redirect(array('view', 'id' => $model -> id));
         }
 
         $this->render('create', array(

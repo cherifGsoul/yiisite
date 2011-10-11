@@ -33,64 +33,16 @@
 		<?php echo $form->error($model,'excerpt'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'slug'); ?>
-		<?php echo $form->textField($model,'slug',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'slug'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'parent_id'); ?>
-		<?php echo $form->textField($model,'parent_id'); ?>
-		<?php echo $form->error($model,'parent_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'lft'); ?>
-		<?php echo $form->textField($model,'lft'); ?>
-		<?php echo $form->error($model,'lft'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'rgt'); ?>
-		<?php echo $form->textField($model,'rgt'); ?>
-		<?php echo $form->error($model,'rgt'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'level'); ?>
-		<?php echo $form->textField($model,'level'); ?>
-		<?php echo $form->error($model,'level'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'status', $model->getStatusOptions()); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_time'); ?>
-		<?php echo $form->textField($model,'create_time'); ?>
-		<?php echo $form->error($model,'create_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_time'); ?>
-		<?php echo $form->textField($model,'update_time'); ?>
-		<?php echo $form->error($model,'update_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'user_id'); ?>
-		<?php echo $form->textField($model,'user_id'); ?>
-		<?php echo $form->error($model,'user_id'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_user_id'); ?>
-		<?php echo $form->textField($model,'update_user_id'); ?>
-		<?php echo $form->error($model,'update_user_id'); ?>
+	<div>
+		<?php echo $form->labelEx($model, 'tag'); ?>
+		<?php echo $form->checkBoxList($model,'taxonomy',Taxonomy::model()->listTags('tag'));?>
+		<?php echo $form->error($model, 'tag');?>
 	</div>
 
 	<div class="row">

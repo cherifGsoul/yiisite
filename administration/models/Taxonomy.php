@@ -68,7 +68,7 @@ class Taxonomy extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
-			'content' => array(self::MANY_MANY, 'Content', '{{taxonomy_content}}(taxonomy_id, content_id)'),
+			'content' => array(self::MANY_MANY, 'Content', '{{content_taxonomy}}(tbl_taxonomy_id, tbl_content_id)'),
 		);
 	}
 
@@ -182,17 +182,36 @@ class Taxonomy extends CActiveRecord
                			'leftAttribute' => 'lft',
                			'rightAttribute' => 'rgt',
                			'levelAttribute' => 'level',
-               			'hasManyRoots'=>true
-                	)
+               			'hasManyRoots'=>true,
+                	),
+			'withRelated'=>array(
+				'class'=>'ext.yiiext.behaviors.model.wr.WithRelatedBehavior',
+			)
 	
         	);
     	}
+
+	
 
 	public function beforeSave()
 	{
       		$this->user_id=$this->update_user_id=Yii::app()->user->id;
       		return parent::beforeSave();
-      	} 
+      	}
+	
+	public function listTerms($type){
+		$criteria=new CDbCriteria;
+		$criteria->condition='`t`.type=:type';
+		//$criteria->with=array('content');
+		//$criteria->together=true;
+		//$criteria->join='LEFT INNER JOIN';
+		$criteria->params=array(':type'=>$type);
+		$tags=self::model()->findAll($criteria);			
+		return $tagList=CHtml::listData($tags,'id','title');
+	}
+	
+
+
 
 
 }

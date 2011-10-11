@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * This is the model class for table "{{content}}".
  *
@@ -65,7 +63,7 @@ class Content extends CActiveRecord
 			array('title, status', 'required'),
 			array('status', 'in', 'range'=>array(1,2,3)),
 			array('title, meta_robots', 'length', 'max'=>128),
-			array('body, excerpt, meta_description, meta_keys,content', 'safe'),
+			array('excerpt, meta_description, meta_keys,content', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('title, type, status', 'safe', 'on'=>'search'),
@@ -84,7 +82,7 @@ class Content extends CActiveRecord
 			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
 		
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
-			'taxonomy' => array(self::MANY_MANY, 'Taxonomy', '{{taxonomy_content}}(taxonomy_id, content_id)'),
+			'taxonomy' => array(self::MANY_MANY, 'Taxonomy', '{{content_taxonomy}}(tbl_content_id, tbl_taxonomy_id)'),
 		);
 	}
 
@@ -171,8 +169,13 @@ class Content extends CActiveRecord
                'rightAttribute' => 'rgt',
                'levelAttribute' => 'level',
                'hasManyRoots'=>true
-                )
-	
+                ),
+	    'withRelated'=>array(
+		'class'=>'ext.yiiext.behaviors.model.wr.WithRelatedBehavior',  
+	    ),
+	'advancedAr'=>array(
+				'class' => 'ext.behaviors.models.CAdvancedArBehavior',
+			),	
         );
     }
 
@@ -183,9 +186,9 @@ class Content extends CActiveRecord
     }*/
 
 	public function beforeSave(){
-      	$this->user_id=$this->update_user_id=Yii::app()->user->id;
-      	return parent::beforeSave();
-      } 
+      		$this->user_id=$this->update_user_id=Yii::app()->user->id;
+      		return parent::beforeSave();
+     	} 
 
 	protected function instantiate($attributes)
 	{

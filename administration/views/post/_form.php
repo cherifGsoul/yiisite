@@ -32,6 +32,15 @@
 		<?php echo $form->dropDownList($model,'status', $model->getStatusOptions()); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
+	<div>
+		<?php //echo $form->labelEx($model, 'tag'); ?>
+		<?php //echo $form->checkBoxList($model,'taxonomy',Taxonomy::model()->listTerms('tag'));?>
+		<?php //echo $form->error($model, 'tag');?>
+	</div>
+	<div>
+		<?php echo $form->labelEx($model, 'category'); ?>
+		<?php echo $form->checkBoxList($model, 'taxonomy',Taxonomy::model()->listTerms('category'),array('empty'=>'none')); ?>
+		<?php echo $form->error($model, 'taxonomy'); ?>
 
 
 	<div class="row">
