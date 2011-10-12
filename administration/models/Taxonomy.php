@@ -202,12 +202,30 @@ class Taxonomy extends CActiveRecord
 	public function listTerms($type){
 		$criteria=new CDbCriteria;
 		$criteria->condition='`t`.type=:type';
-		//$criteria->with=array('content');
-		//$criteria->together=true;
-		//$criteria->join='LEFT INNER JOIN';
 		$criteria->params=array(':type'=>$type);
 		$tags=self::model()->findAll($criteria);			
 		return $tagList=CHtml::listData($tags,'id','title');
+	}
+
+	/**
+	 * Suggests a list of existing tags matching the specified keyword.
+	 * @param string the keyword to be matched
+	 * @param integer maximum number of tags to be returned
+	 * @return array list of matching tag names
+	 */
+	public function suggestTags($keyword,$limit=20)
+	{
+		$tags=$this->findAll(array(
+			'condition'=>array('title LIKE :keyword', "type='tag'"),
+			'limit'=>$limit,
+			'params'=>array(
+				':keyword'=>'%'.strtr($keyword,array('%'=>'\%', '_'=>'\_', '\\'=>'\\\\')).'%',
+			),
+		));
+		$names=array();
+		foreach($tags as $tag)
+			$names[]=$tag->slug;
+		return $names;
 	}
 	
 

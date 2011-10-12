@@ -41,7 +41,19 @@
 		<?php echo $form->labelEx($model, 'category'); ?>
 		<?php echo $form->checkBoxList($model, 'taxonomy',Taxonomy::model()->listTerms('category'),array('empty'=>'none')); ?>
 		<?php echo $form->error($model, 'taxonomy'); ?>
-
+	</div>
+	<div>
+		<?php echo $form->labelEx($model, 'tags'); ?>
+		<?php $this->widget('CAutoComplete', array(
+					'model'=>$model,
+					'attribute'=>'taxonomy',
+					'url'=>array('suggestTags'),
+					'multiple'=>true,
+					'htmlOptions'=>array('size'=>50),		
+		)); ?>
+		<?php echo $form->error($model, 'tags'); ?>
+	</div>
+	
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'meta_description'); ?>

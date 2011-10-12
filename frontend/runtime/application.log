@@ -218,3 +218,10 @@ Stack trace:
 #2 /home/cherif/server/yiisite/frontend/webroot/index.php(13): CApplication->run()
 #3 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')
 #4 {main} REQUEST_URI=/yiisite/index.php?r=backend/content/entry
+2011/10/12 22:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "frontend".' in /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php:281
+Stack trace:
+#0 /home/cherif/server/yiisite/common/libraries/yii/web/CWebApplication.php(136): CWebApplication->runController('frontend')
+#1 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/cherif/server/yiisite/frontend/webroot/index.php(13): CApplication->run()
+#3 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')
+#4 {main} REQUEST_URI=/index.php?r=frontend

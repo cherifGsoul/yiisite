@@ -108,7 +108,7 @@ class Content extends CActiveRecord
 			'user_id' => 'User',
 			'update_user_id' => 'Update User',
 			'meta_description' => 'Meta Description',
-			'meta_keys' => 'Meta Keys',
+			'meta_keys' => 'Meta Keyswords',
 			'meta_robots' => 'Meta Robots',
 		);
 	}
