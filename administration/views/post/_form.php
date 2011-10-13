@@ -45,9 +45,10 @@
 	<div>
 		<?php echo $form->labelEx($model, 'tags'); ?>
 		<?php $this->widget('CAutoComplete', array(
-					'model'=>$model,
-					'attribute'=>'taxonomy',
+					'model'=>'Taxonomy',
+					'attribute'=>'tags',
 					'url'=>array('suggestTags'),
+					'name'=>'tags',
 					'multiple'=>true,
 					'htmlOptions'=>array('size'=>50),		
 		)); ?>
