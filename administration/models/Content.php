@@ -78,8 +78,8 @@ class Content extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'comments' => array(self::HAS_MANY, 'Comment', 'post_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
-			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
+			/*'comments' => array(self::HAS_MANY, 'Comment', 'post_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
+			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),*/
 		
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 			'taxonomy' => array(self::MANY_MANY, 'Taxonomy', '{{content_taxonomy}}(tbl_content_id, tbl_taxonomy_id)'),
@@ -92,21 +92,11 @@ class Content extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
 			'title' => 'Title',
 			'type' => 'Type',
 			'content' => 'Content',
 			'excerpt' => 'Excerpt',
-			'slug' => 'Slug',
-			'parent_id' => 'Parent',
-			'lft' => 'Lft',
-			'rgt' => 'Rgt',
-			'level' => 'Level',
 			'status' => 'Status',
-			'create_time' => 'Create Time',
-			'update_time' => 'Update Time',
-			'user_id' => 'User',
-			'update_user_id' => 'Update User',
 			'meta_description' => 'Meta Description',
 			'meta_keys' => 'Meta Keyswords',
 			'meta_robots' => 'Meta Robots',
@@ -173,9 +163,9 @@ class Content extends CActiveRecord
 	    'withRelated'=>array(
 		'class'=>'ext.yiiext.behaviors.model.wr.WithRelatedBehavior',  
 	    ),
-	'advancedAr'=>array(
+	/*'advancedAr'=>array(
 				'class' => 'ext.behaviors.models.CAdvancedArBehavior',
-			),	
+			),	*/
         );
     }
 

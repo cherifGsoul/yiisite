@@ -1,4 +1,4 @@
-g<div class="form">
+<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
@@ -39,19 +39,33 @@ g<div class="form">
 	</div>
 	<div>
 		<?php echo $form->labelEx($model, 'category'); ?>
-		<?php echo $form->checkBoxList($model, 'taxonomy',Taxonomy::model()->listTerms('category'),array('empty'=>'none')); ?>
+		<?php echo $form->checkBoxList($model, 'categories',Taxonomy::model()->listTerms('category'),array('empty'=>'none')); ?>
 		<?php echo $form->error($model, 'taxonomy'); ?>
 	</div>
 	<div>
-		<?php echo $form->labelEx($model, 'tags'); ?>
-		<?php $this->widget('CAutoComplete', array(
+		<?php echo $form->labelEx($model,'tags'); ?>
+		<?php $this->widget('zii.widgets.jui.CJuiAutoComplete', array(
+					'attribute'=>'taxonomy',
 					'model'=>'Taxonomy',
-					'attribute'=>'tags',
-					'url'=>array('suggestTags'),
-					'name'=>'tag',
-					'multiple'=>true,
+					'name'=>'tags',
+					'source'=>$this->createUrl('post/suggestTags'),
 					'htmlOptions'=>array('size'=>50),		
-		)); ?>
+		));
+
+
+		/* $this->widget('CAutoComplete', array(
+			'model'=>'Taxonomy',
+			'attribute'=>'tags',
+			'url'=>('suggestTags'),
+			'options'=>array(
+					'minLength'=>'2'
+				 ),
+			'name'=>'tags',
+			'multiple'=>true,
+			'htmlOptions'=>array('size'=>50),
+		)); */
+		
+		?>
 		<?php echo $form->error($model, 'tags'); ?>
 	</div>
 	

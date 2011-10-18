@@ -70,6 +70,7 @@ class Taxonomy extends CActiveRecord
 			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
 			'content' => array(self::MANY_MANY, 'Content', '{{content_taxonomy}}(tbl_taxonomy_id, tbl_content_id)'),
 		);
+		
 	}
 
 	/**
@@ -81,11 +82,6 @@ class Taxonomy extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Title',
 			'description' => 'Description',
-			'type' => 'Type',
-			'slug' => 'Slug',
-			'lft' => 'Lft',
-			'rgt' => 'Rgt',
-			'level' => 'Level',
 			'parent_id' => 'Parent',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
@@ -184,9 +180,6 @@ class Taxonomy extends CActiveRecord
                			'levelAttribute' => 'level',
                			'hasManyRoots'=>true,
                 	),
-			'withRelated'=>array(
-				'class'=>'ext.yiiext.behaviors.model.wr.WithRelatedBehavior',
-			)
 	
         	);
     	}
@@ -216,7 +209,8 @@ class Taxonomy extends CActiveRecord
 	public function suggestTags($keyword,$limit=20)
 	{
 		$tags=$this->findAll(array(
-			'condition'=>array('title LIKE :keyword', "type='tag'"),
+			'condition'=>'title LIKE :keyword AND type="tag"',
+			//'condition'=>'title LIKE :keyword',
 			'limit'=>$limit,
 			'params'=>array(
 				':keyword'=>'%'.strtr($keyword,array('%'=>'\%', '_'=>'\_', '\\'=>'\\\\')).'%',
@@ -227,6 +221,11 @@ class Taxonomy extends CActiveRecord
 			$names[]=$tag->slug;
 		return $names;
 	}
+
+	/*public static function array2string($tags)
+	{
+		return implode(', ',$tags);
+	}*/
 	
 
 

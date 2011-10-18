@@ -35,7 +35,7 @@ class PostController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','suggestTags','suggestTags2','test'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -66,27 +66,47 @@ class PostController extends Controller
                 $model->disableBehavior('tree');
 
 		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		//$this->performAjaxValidation($model);
 
 		if(isset($_POST['Post']))
 		{
 			$model->attributes=$_POST['Post'];
-			if (!empty($_POST['Post']['taxonomy'])){
-
-				$model->taxonomy=$_POST['Post']['taxonomy'];
-				$model->withRelated->save(true,array('post'));
+			if (!empty($_POST['Post']['categories'])){
+				$model->categories=$_POST['Post']['categories'];
+				$model->withRelated->save(true,array('taxonomy, user'));
 				$this->redirect(array('view','id'=>$model->id));
-				
 			}else{
 				$model->save();
 				$this->redirect(array('view','id'=>$model->id));
-		}
+			}
 
-		
 		}
 		$this->render('create',array(
 			'model'=>$model,
 		));
+	}
+
+	public function actionTest(){
+		$article=new Post;
+
+		$user=new User;
+
+		$post->user=$user;
+		$cat1=new Category;
+		$cat2=new Category;
+
+		$post->categories=array($cat1,$cat2);
+
+		$post->title='article1';
+		$cat1->title='categorie1';
+		$cat2->title='categorie2';
+
+		$result=$post->withRelated->save(true,array(
+						//'user'=>array('group'),
+						//'comments'=>array('user'),
+						'categories',
+						));
+		$this->redirect(array('view','id'=>$post->id));
 	}
 	/*public function actionCreate()
 	{
@@ -185,13 +205,35 @@ class PostController extends Controller
 	 */
 	public function actionSuggestTags()
 	{
-		if(isset($_GET['q']) && ($keyword=trim($_GET['q']))!=='')
-		{
+	//	$keyword='';
+		//if(isset($_POST['Post']) && ($_POST['Post']['taxonomy'])!=='')
+		if(isset($_GET['tags']) && ($keyword=trim($_GET['tags']))!==''){
+		
+				
+				$tags=Taxonomy::model()->suggestTags($keyword);
+				if($tags!==array())
+					//echo implode("\n",$tags);
+					echo CJSON::encode(array($tags));
+					//Yii::app()->end();
+				//CVarDumper::dump($tags,10, true);
+		}
+			
+		
+	}
+
+	public function actionSuggestTags2()
+	{
+		$keyword='';
+		//if(isset($_GET['q']) && ($keyword=trim($_GET['q']))!=='')
+		//{
 			$tags=Taxonomy::model()->suggestTags($keyword);
 			if($tags!==array())
-				echo implode("\n",$tags);
-		}
+			//	echo implode("\n",$tags)."<br/>";
+				echo CJSON::encode(array($tags))."<br/>";
+				//CVarDumper::dump($tags,10, true);
+		//}
 	}
+
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.

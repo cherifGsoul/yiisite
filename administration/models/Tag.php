@@ -22,6 +22,7 @@ class Tag extends Taxonomy
 	{
 		return parent::model($className);
 	}
+
 	
 	public function defaultScope()
 	{

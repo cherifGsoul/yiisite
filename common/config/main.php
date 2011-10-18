@@ -3,15 +3,15 @@
 // uncomment the following to define a path alias
 Yii::setPathOfAlias('site', dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../');
 
-$admin_conf = include '../administration/config/main.php';
-$front_conf = include '../frontend/config/main.php';
-
-
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-$common_conf = array(
+return array(
+
+	// preloading 'log' component
+	'preload'=>array('log'),
     'import'=>array(
-        'site.common.models.*',    
+        'site.common.models.*', 
+	//'site.common.extensions.yiidebugtb.*', //our extension
     ),
     'components' => array(
         'db' => array(
@@ -23,21 +23,27 @@ $common_conf = array(
             'tablePrefix' => 'tbl_',
 	    'enableProfiling'=> true,
         ),
-	// uncomment the following to enable URLs in path-format
-		
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+	
+	'log'=>array(
+			'class'=>'CLogRouter',
+			'routes'=>array(
+				array(
+					'class'=>'CFileLogRoute',
+					'levels'=>'error, warning, trace,info',
+                    			'categories'=>'system.db.*',
+				),
+				
+				array(
+					'class'=>'CWebLogRoute',
+				),
+
 			),
-		),
+		),			
+	),	
         'params' => array(
             // this is used in contact page
             'adminEmail' => 'webmaster@example.com',
         ),
-    )
+    
+
 );
-//return CMap::mergeArray($admin_conf, $common_conf);
-return CMap::mergeArray($admin_conf,$common_conf);

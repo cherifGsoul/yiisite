@@ -31,15 +31,25 @@ class Post extends Content {
 
 	/*public function rules()
 	{
-		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
-		//return array(
-			
-			/*array('tags', 'match', 'pattern'=>'/^[\w\s,]+$/', 'message'=>'Tags can only contain word characters.'),
-			array('tags', 'normalizeTags'),*/
+		return array();
+	}*/
 
-		//);
-	//}
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			'comments' => array(self::HAS_MANY, 'Comment', 'post_id', 'condition'=>'comments.status='.Comment::STATUS_APPROVED, 'order'=>'comments.create_time DESC'),
+			'commentCount' => array(self::STAT, 'Comment', 'post_id', 'condition'=>'status='.Comment::STATUS_APPROVED),
+		
+			'user' => array(self::BELONGS_TO, 'User', 'user_id'),
+			'categories' => array(self::MANY_MANY, 'Taxonomy', '{{content_taxonomy}}(tbl_content_id, tbl_taxonomy_id)'),
+		);
+	}
+
+
+		
+	
 
 
 	public function defaultScope()
@@ -48,6 +58,22 @@ class Post extends Content {
 			'condition'=>"type='post'",
 		);
 	}
+
+/*	public function attributeLabels()
+	{
+		return array(
+			'title' => 'Title',
+			'type' => 'Type',
+			'content' => 'Content',
+			'excerpt' => 'Excerpt',
+			'status' => 'Status',
+			'categories'=>'Categories',
+			'tags'=>'Tags',
+			'meta_description' => 'Meta Description',
+			'meta_keys' => 'Meta Keyswords',
+			'meta_robots' => 'Meta Robots',
+		);
+	}*/
 
 	/**
 	 * Normalizes the user-entered tags.
