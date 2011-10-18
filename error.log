@@ -1797,3 +1797,972 @@
 [Wed Oct 12 21:09:38 2011] [error] [client 127.0.0.1] PHP  20. CController->renderPartial() /home/cherif/server/yiisite/administration/views/post/create.php:15, referer: http://yiisite.dev/administration/index.php?r=post/index&view=post
 [Wed Oct 12 21:09:38 2011] [error] [client 127.0.0.1] PHP  21. CBaseController->renderFile() /home/cherif/server/yiisite/common/libraries/yii/web/CController.php:866, referer: http://yiisite.dev/administration/index.php?r=post/index&view=post
 [Wed Oct 12 21:09:38 2011] [error] [client 127.0.0.1] PHP  22. CBaseController->renderInternal() /home/cherif/server/yiisite/common/libraries/yii/web/CBaseController.php:88, referer: http://yiisite.dev/administration/index.php?r=post/index&view=post
+[Fri Oct 14 11:29:06 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(13): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240, referer: http://yiisite.dev/administration/post/index?view=post
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/administration../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:13
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/administration../common/config/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:13
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 11:49:18 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 11:51:01 2011] [error] [client 127.0.0.1] PHP Fatal error:  Call to undefined function direname() in /home/cherif/server/yiisite/administration/index.php on line 5
+[Fri Oct 14 11:51:01 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:51:01 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:51:23 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: config in /home/cherif/server/yiisite/administration/index.php on line 16
+[Fri Oct 14 11:51:23 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:51:23 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:51:23 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct(NULL)\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', NULL)\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication(NULL)\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 11:52:22 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'CMap' not found in /home/cherif/server/yiisite/administration/index.php on line 7
+[Fri Oct 14 11:52:22 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:52:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:54:42 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: config in /home/cherif/server/yiisite/administration/index.php on line 18
+[Fri Oct 14 11:54:42 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:54:42 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:54:42 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct(NULL)\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', NULL)\n#3 /home/cherif/server/yiisite/administration/index.php(18): YiiBase::createWebApplication(NULL)\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/administrationconfig/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/administrationconfig/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 11:55:00 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: common_conf in /home/cherif/server/yiisite/administration/config/main.php on line 103, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:10 2011] [error] [client 127.0.0.1] PHP   5. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: common_conf in /home/cherif/server/yiisite/administration/config/main.php on line 103, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:56:11 2011] [error] [client 127.0.0.1] PHP   5. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cherif/server/yiisite/administration/config/main.php on line 10, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:01 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cherif/server/yiisite/administration/config/main.php on line 10, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:18, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/administration/
+[Fri Oct 14 11:57:02 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/administration/
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cherif/server/yiisite/frontend/config/main.php on line 9, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:07:22 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:08:59 2011] [error] [client 127.0.0.1] PHP   7. CMap::mergeArray() /home/cherif/server/yiisite/frontend/config/main.php:95, referer: http://yiisite.dev/contact.html
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:09:10 2011] [error] [client 127.0.0.1] PHP   7. CMap::mergeArray() /home/cherif/server/yiisite/frontend/config/main.php:95, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:11:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP Warning:  include(../../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:22 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP Warning:  include(../../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP Stack trace:, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:13:51 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123, referer: http://yiisite.dev/site/page/view/about.html
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP Warning:  include(../../../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../../../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:15:04 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP Warning:  require_once(/home/cherif/server/yiisite/frontend/../../common/libraries/yii/yii.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/index.php on line 12
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP Fatal error:  require_once(): Failed opening required '/home/cherif/server/yiisite/frontend/../../common/libraries/yii/yii.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/index.php on line 12
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:16:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/frontend/../config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/frontend/../config/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:16:49 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/frontendconfig/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/frontendconfig/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:04 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:11 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/index.php:13
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:17:42 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:19:09 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:28:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP Warning:  include(/home/cherif/server/yiisite/frontend/config/../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '/home/cherif/server/yiisite/frontend/config/../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:29:22 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(/home/cherif/server/yiisite/frontend/config//../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '/home/cherif/server/yiisite/frontend/config//../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:29:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP Warning:  include(/home/cherif/server/yiisite/frontend/config/../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '/home/cherif/server/yiisite/frontend/config/../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:30:59 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP Warning:  include(/home/cherif/server/yiisite/frontend/config/../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '/home/cherif/server/yiisite/frontend/config/../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:31:00 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:31:38 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:32:25 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:33:28 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/cherif/server/yiisite/frontend/config/main.php on line 99
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:34:56 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:35:55 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:13
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:42:14 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP Warning:  include(../common/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../common/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/frontend/config/main.php on line 5
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:43:01 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 12:45:22 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'CMap' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 6
+[Fri Oct 14 12:45:22 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:45:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:45:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:50:19 2011] [error] [client 127.0.0.1] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/cherif/server/yiisite/frontend/webroot/index.php on line 4
+[Fri Oct 14 12:50:19 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:50:19 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:50:30 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Yii' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 2
+[Fri Oct 14 12:50:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:50:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:50:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:51:01 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Yii' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 5
+[Fri Oct 14 12:51:01 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:51:01 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:51:01 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:51:02 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'Yii' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 5
+[Fri Oct 14 12:51:02 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:51:02 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:51:02 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:52:22 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'CMap' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 8
+[Fri Oct 14 12:52:22 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:52:22 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:52:22 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:52:23 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'CMap' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 8
+[Fri Oct 14 12:52:23 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:52:23 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:52:23 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:52:49 2011] [error] [client 127.0.0.1] PHP Fatal error:  Class 'CMap' not found in /home/cherif/server/yiisite/frontend/webroot/index.php on line 8
+[Fri Oct 14 12:52:49 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:52:49 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:52:49 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: common_config in /home/cherif/server/yiisite/frontend/webroot/index.php on line 17
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:17
+[Fri Oct 14 12:53:38 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct(NULL)\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', NULL)\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(18): YiiBase::createWebApplication(NULL)\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:17
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/frontend/webroot/../../common/libraries/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:18
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/frontend/webroot/../../common/libraries/config/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:18
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 12:53:54 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 12:54:25 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:54:25 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:54:25 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:54:25 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:54:25 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:54:37 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:54:37 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:54:37 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:54:37 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:54:37 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:54:38 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:54:38 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:54:38 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:54:38 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:54:38 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:56:42 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:56:42 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:56:42 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:56:42 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:56:42 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:56:43 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:56:43 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:56:43 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:56:43 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:56:43 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:56:44 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:56:44 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:56:44 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:56:44 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:56:44 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:56:46 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:56:46 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:56:46 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:56:46 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:56:46 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:56:47 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:56:47 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:56:47 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:56:47 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:56:47 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:57:57 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:57:57 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:57:57 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:57:57 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:57:57 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:59:13 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:59:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:59:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:59:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:59:13 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:59:15 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:59:15 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:59:15 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:59:15 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:59:15 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:59:17 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:59:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:59:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:59:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:59:17 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:59:19 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:59:19 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:59:19 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:59:19 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:59:19 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 12:59:20 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 12:59:20 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 12:59:20 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 12:59:20 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 12:59:20 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:00:08 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:00:08 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:00:08 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:00:08 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:00:08 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:01:39 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:01:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:01:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:01:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:01:39 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: frontend_config in /home/cherif/server/yiisite/frontend/webroot/index.php on line 14
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:27 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:15:39 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:16:30 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:17:17 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:20:47 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:20:47 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:20:47 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:20:47 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:20:47 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Notice:  Undefined variable: frontend_config in /home/cherif/server/yiisite/frontend/webroot/index.php on line 14
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:03 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:22:29 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(../administration/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../administration/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 6
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(../frontend/config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Warning:  include(): Failed opening '../frontend/config/main.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/config/main.php on line 7
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP   6. require() /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:123
+[Fri Oct 14 13:39:13 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:40:21 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:41:53 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:41:53 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:41:53 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:41:53 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:41:53 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:42:10 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(13): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:42:21 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:44:10 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:44:15 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(13): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:45:35 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(13): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:47:29 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:47:29 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:47:29 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:47:29 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:47:29 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Warning:  require(/home/cherif/server/yiisite/administration/../config/main.php): failed to open stream: No such file or directory in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:16
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Fatal error:  require(): Failed opening required '/home/cherif/server/yiisite/administration/../config/main.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 123
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   2. YiiBase::createWebApplication() /home/cherif/server/yiisite/administration/index.php:16
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   3. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100
+[Fri Oct 14 13:47:53 2011] [error] [client 127.0.0.1] PHP   4. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128
+[Fri Oct 14 13:48:59 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:48:59 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:48:59 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:48:59 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:49:26 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:49:26 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:49:26 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:49:26 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:49:26 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:51:42 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/frontend/webroot/index.php(15): YiiBase::createWebApplication('/home/cherif/se...')\n#4 /home/cherif/server/yiisite/index.php(2): require('/home/cherif/se...')\n#5 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:52:54 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:52:54 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:52:54 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0
+[Fri Oct 14 13:52:54 2011] [error] [client 127.0.0.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2
+[Fri Oct 14 13:52:54 2011] [error] [client 127.0.0.1] PHP   3. CMap::mergeArray() /home/cherif/server/yiisite/frontend/webroot/index.php:14
+[Fri Oct 14 13:53:04 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:53:04 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:53:04 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:53:04 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:54:10 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:54:10 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:54:10 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:54:10 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:54:10 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP Warning:  Invalid argument supplied for foreach() in /home/cherif/server/yiisite/common/libraries/yii/collections/CMap.php on line 277
+[Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP Stack trace:
+[Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
+[Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
+[Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240

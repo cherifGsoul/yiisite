@@ -64,6 +64,7 @@ class DashboardController extends GController
 	 */
 	public function actionIndex()
 	{
+		$this->pageTitle=Yii::app()->name . 'DASHBOARD';
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
@@ -88,6 +89,7 @@ class DashboardController extends GController
 	 */
 	public function actionLogin()
 	{
+		$this->pageTitle=Yii::app()->name . ' :: Login';
 		$this->layout = "//layouts/login";
 		
 		$model=new LoginForm;

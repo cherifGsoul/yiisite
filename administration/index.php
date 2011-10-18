@@ -1,7 +1,12 @@
 <?php
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../common/libraries/yii/yii.php';
-$config=dirname(__FILE__).'/../common/config/main.php';
+//$common_config=dirname(__FILE__).'/../common/config/main.php';
+$config=dirname(__FILE__).'/config/main.php';
+
+//$config=CMap::mergeArray($common_config,$backend_config);
+
+
 
 
 // remove the following lines when in production mode

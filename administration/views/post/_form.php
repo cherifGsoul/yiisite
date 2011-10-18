@@ -1,4 +1,4 @@
-<div class="form">
+g<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'post-form',
@@ -48,7 +48,7 @@
 					'model'=>'Taxonomy',
 					'attribute'=>'tags',
 					'url'=>array('suggestTags'),
-					'name'=>'tags',
+					'name'=>'tag',
 					'multiple'=>true,
 					'htmlOptions'=>array('size'=>50),		
 		)); ?>
