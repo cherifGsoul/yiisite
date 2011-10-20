@@ -2766,3 +2766,273 @@
 [Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP   1. {main}() /home/cherif/server/yiisite/administration/index.php:0
 [Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP   2. CMap::mergeArray() /home/cherif/server/yiisite/administration/index.php:15
 [Fri Oct 14 13:54:19 2011] [error] [client 127.0.0.1] PHP Fatal error:  Uncaught exception 'CException' with message 'Application base path "protected" is not a valid directory.' in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php:240\nStack trace:\n#0 /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php(130): CApplication->setBasePath('protected')\n#1 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(128): CApplication->__construct('/home/cherif/se...')\n#2 /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php(100): YiiBase::createApplication('CWebApplication', '/home/cherif/se...')\n#3 /home/cherif/server/yiisite/administration/index.php(16): YiiBase::createWebApplication('/home/cherif/se...')\n#4 {main}\n  thrown in /home/cherif/server/yiisite/common/libraries/yii/base/CApplication.php on line 240
+[Thu Oct 20 22:33:01 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico, referer: http://yiisite.dev/
+[Thu Oct 20 22:33:01 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:34:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:35:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:35:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:35:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:35:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:35:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:36:13 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/administartion
+[Thu Oct 20 22:36:13 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:36:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:36:43 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:36:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:36:48 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:37:03 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:38:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:38:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:38:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:38:30 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:38:38 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:19 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:55 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:55 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:55 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:55 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:55 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:39:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:39:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:41:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:41:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:41:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:44:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:44:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:44:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:44:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:44:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 22:49:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:37 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:42 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 22:49:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 22:49:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 22:49:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 22:49:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:49:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:49:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:49:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:49:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:49:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:49:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:49:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:49:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:49:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:50:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:22 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:50:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:50:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 22:50:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected '.' in /home/cherif/server/yiisite/frontend/config/main.php on line 36, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:27 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP Parse error:  syntax error, unexpected '.' in /home/cherif/server/yiisite/frontend/config/main.php on line 36, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP Stack trace:, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP   1. {main}() /home/cherif/server/yiisite/index.php:0, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP   2. require() /home/cherif/server/yiisite/index.php:2, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP   3. YiiBase::createWebApplication() /home/cherif/server/yiisite/frontend/webroot/index.php:15, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP   4. YiiBase::createApplication() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:100, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] PHP   5. CApplication->__construct() /home/cherif/server/yiisite/common/libraries/yii/YiiBase.php:128, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 22:54:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:54:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:55:25 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:55:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:55:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:58:02 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:58:07 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 22:58:21 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:00:30 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:00:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:00:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:00:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:00:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:00:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:01:33 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:02:04 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 23:02:04 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 23:02:04 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 23:02:04 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/
+[Thu Oct 20 23:02:04 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:02:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 23:02:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 23:02:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 23:02:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/page&view=about
+[Thu Oct 20 23:02:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:02:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:02:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:02:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:02:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/css, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:02:46 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:03:36 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:04:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:04:21 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:07:19 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:08:15 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:08:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:10:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:10:29 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:10:54 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico, referer: http://yiisite.dev/
+[Thu Oct 20 23:13:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:13:50 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:13:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:13:54 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:13:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:24:35 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:44:19 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:44:35 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:44:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:45:08 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:45:08 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:45:12 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:45:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home
+[Thu Oct 20 23:45:58 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:46:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:47:05 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:47:08 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:47:21 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:47:26 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:47:28 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:48:24 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:48:30 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:50:17 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 23:50:17 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Thu Oct 20 23:50:18 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:50:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:50:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:50:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:55:48 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:56:17 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:56:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:44 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:56:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:56:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:56:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:58:14 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:58:34 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:58:47 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:59:20 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:59:26 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:59:39 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Thu Oct 20 23:59:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:59:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Thu Oct 20 23:59:56 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:09 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:00:10 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:12 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:00:12 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:46 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:00:46 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:48 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:00:48 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:00:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:00:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:01:16 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:01:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:01:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:01:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:02:16 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:02:16 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:02:16 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:02:58 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:02:58 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:02:58 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:03:00 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/home
+[Fri Oct 21 00:03:00 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:03:17 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:03:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:03:45 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:03:46 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:03:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/assets
+[Fri Oct 21 00:03:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:04:02 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:04:27 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:04:31 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:04:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:04:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:04:57 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:05:09 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:05:38 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:05:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:06:31 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:07:00 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:07:34 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:07:35 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/login
+[Fri Oct 21 00:07:50 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:11:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:11:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/frontend/webroot/assets/1521a9b8, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:11:59 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:12:49 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:13:39 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:14:01 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:16:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:16:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:16:52 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:16:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/webroot, referer: http://yiisite.dev/index.php?r=site/contact
+[Fri Oct 21 00:16:53 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:17:23 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:18:32 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:18:51 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico
+[Fri Oct 21 00:19:27 2011] [error] [client 127.0.1.1] File does not exist: /home/cherif/server/yiisite/favicon.ico

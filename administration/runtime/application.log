@@ -4479,3 +4479,135 @@ in /home/cherif/server/yiisite/administration/index.php (18)
 2011/10/18 11:25:04 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_comment`
 in /home/cherif/server/yiisite/administration/controllers/CommentController.php (64)
 in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 22:38:38 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/models/User.php (33)
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+2011/10/20 22:39:19 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/models/User.php (33)
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+2011/10/20 23:13:45 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/models/User.php (33)
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+2011/10/20 23:13:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_user`
+in /home/cherif/server/yiisite/administration/models/User.php (33)
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+2011/10/20 23:13:45 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_user`
+in /home/cherif/server/yiisite/administration/models/User.php (33)
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+2011/10/20 23:13:45 [trace] [system.db.ar.CActiveRecord] User.findByAttributes()
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+in /home/cherif/server/yiisite/administration/controllers/DashboardController.php (109)
+2011/10/20 23:13:45 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_user` `t` WHERE `t`.`username`=:yp0 LIMIT 1
+in /home/cherif/server/yiisite/administration/components/UserIdentity.php (37)
+in /home/cherif/server/yiisite/administration/models/LoginForm.php (52)
+in /home/cherif/server/yiisite/administration/controllers/DashboardController.php (109)
+2011/10/20 23:13:49 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (88)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (88)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (88)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.ar.CActiveRecord] Page.count()
+in /home/cherif/server/yiisite/administration/views/page/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (91)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_content` `t` WHERE type='page'
+in /home/cherif/server/yiisite/administration/views/page/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (91)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.ar.CActiveRecord] Page.findAll()
+in /home/cherif/server/yiisite/administration/views/page/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (91)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:49 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_content` `t` WHERE type='page' LIMIT 10
+in /home/cherif/server/yiisite/administration/views/page/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (91)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (98)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (98)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (98)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.ar.CActiveRecord] Page.count()
+in /home/cherif/server/yiisite/administration/views/page/admin.php (61)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (105)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_content` `t` WHERE type='page'
+in /home/cherif/server/yiisite/administration/views/page/admin.php (61)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (105)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.ar.CActiveRecord] Page.findAll()
+in /home/cherif/server/yiisite/administration/views/page/admin.php (61)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (105)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:51 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_content` `t` WHERE type='page' LIMIT 10
+in /home/cherif/server/yiisite/administration/views/page/admin.php (61)
+in /home/cherif/server/yiisite/administration/controllers/PageController.php (105)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (180)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (180)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (180)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.ar.CActiveRecord] Post.count()
+in /home/cherif/server/yiisite/administration/views/post/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (183)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM `tbl_content` `t` WHERE type='post'
+in /home/cherif/server/yiisite/administration/views/post/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (183)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.ar.CActiveRecord] Post.findAll()
+in /home/cherif/server/yiisite/administration/views/post/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (183)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:54 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_content` `t` WHERE type='post' LIMIT 10
+in /home/cherif/server/yiisite/administration/views/post/index.php (17)
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (183)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:56 [trace] [system.db.CDbConnection] Opening DB connection
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (65)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (65)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_content`
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (65)
+in /home/cherif/server/yiisite/administration/index.php (18)
+2011/10/20 23:13:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW COLUMNS FROM `tbl_taxonomy`
+in /home/cherif/server/yiisite/administration/models/Taxonomy.php (33)
+in /home/cherif/server/yiisite/administration/views/post/_form.php (42)
+in /home/cherif/server/yiisite/administration/views/post/create.php (15)
+2011/10/20 23:13:56 [trace] [system.db.CDbCommand] Querying SQL: SHOW CREATE TABLE `tbl_taxonomy`
+in /home/cherif/server/yiisite/administration/models/Taxonomy.php (33)
+in /home/cherif/server/yiisite/administration/views/post/_form.php (42)
+in /home/cherif/server/yiisite/administration/views/post/create.php (15)
+2011/10/20 23:13:56 [trace] [system.db.ar.CActiveRecord] Taxonomy.findAll()
+in /home/cherif/server/yiisite/administration/models/Taxonomy.php (199)
+in /home/cherif/server/yiisite/administration/views/post/_form.php (42)
+in /home/cherif/server/yiisite/administration/views/post/create.php (15)
+2011/10/20 23:13:56 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM `tbl_taxonomy` `t` WHERE `t`.type=:type
+in /home/cherif/server/yiisite/administration/models/Taxonomy.php (199)
+in /home/cherif/server/yiisite/administration/views/post/_form.php (42)
+in /home/cherif/server/yiisite/administration/views/post/create.php (15)
+2011/10/20 23:13:56 [trace] [system.db.ar.CActiveRecord] lazy loading Post.categories
+in /home/cherif/server/yiisite/administration/views/post/_form.php (42)
+in /home/cherif/server/yiisite/administration/views/post/create.php (15)
+in /home/cherif/server/yiisite/administration/controllers/PostController.php (86)

@@ -20,7 +20,6 @@ $front= array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'aaa',
@@ -32,6 +31,10 @@ $front= array(
 
 	// application components
 	'components'=>array(
+		'assetManager'=>array(
+			'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'webroot/assets',
+			'baseUrl'=>'..'.DIRECTORY_SEPARATOR.'frontend/webroot/assets',
+		),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,

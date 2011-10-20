@@ -6,6 +6,7 @@ Yii::setPathOfAlias('site', dirname(__FILE__) . DIRECTORY_SEPARATOR . '../../');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
 return array(
+		'sourceLanguage'=>'fr',
 
 	// preloading 'log' component
 	'preload'=>array('log'),

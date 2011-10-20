@@ -7,3 +7,5 @@ access.log
 error.log
 common/config/main.php
 yii-1.1.0-validator-cheatsheet.pdf
+.project
+.settings

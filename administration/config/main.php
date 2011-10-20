@@ -9,7 +9,6 @@ $admin_conf = array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'DASHBOARD',
 	'defaultController'=>'dashboard',
-	'sourceLanguage'=>'fr',
 
 	// preloading 'log' component
 	//'preload'=>array('log'),
